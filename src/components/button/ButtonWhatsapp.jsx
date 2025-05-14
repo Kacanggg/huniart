@@ -13,7 +13,7 @@ const ButtonWa = ({
   )}`;
 
   return (
-    <div className="fixed bottom-6 right-6 z-50">
+    <div className="fixed bottom-6 right-6 z-50 safe-area-bottom">
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -21,7 +21,11 @@ const ButtonWa = ({
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 10, scale: 0.9 }}
             transition={{ type: "spring", stiffness: 300, damping: 24 }}
-            className="absolute bottom-20 right-0 bg-white rounded-lg shadow-xl p-4 w-64 mb-2"
+            className="absolute bottom-20 right-0 bg-white rounded-lg shadow-xl p-4 w-64 mb-2 safe-area-right"
+            style={{
+              maxWidth: "calc(100vw - 40px)",
+              right: 0,
+            }}
           >
             <div className="flex justify-between items-center mb-2">
               <h3 className="font-semibold text-gray-800 flex items-center">
@@ -62,6 +66,12 @@ const ButtonWa = ({
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         onClick={() => setIsOpen(!isOpen)}
+        style={{
+          WebkitTransform: "translateZ(0)", // Memastikan button tetap terlihat pada mobile
+          transform: "translateZ(0)",
+          marginBottom: "env(safe-area-inset-bottom, 0px)",
+          marginRight: "env(safe-area-inset-right, 0px)",
+        }}
       >
         <motion.div
           className="absolute inset-0 rounded-full bg-green-500"

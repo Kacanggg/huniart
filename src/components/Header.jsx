@@ -20,10 +20,12 @@ const Header = () => {
   return (
     <header
       className={`w-full py-4 sticky top-0 z-50 shadow-md transition-colors duration-300 ${
-        isScrolled ? "bg-transparent backdrop-blur-md" : "bg-black"
-      } text-white`}
+        isScrolled
+          ? "bg-navbar/80 backdrop-blur-md text-navbar"
+          : "bg-navbar text-navbar"
+      }`}
     >
-      <div className="w-full px-20 flex justify-between items-center">
+      <div className="w-full px-4 md:px-20 flex justify-between items-center">
         <Link to="/" className="flex items-center space-x-2">
           <img src={logo} alt="Logo" className="h-10 w-auto" />
         </Link>
@@ -32,58 +34,70 @@ const Header = () => {
             {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
         </div>
-        <nav className="hidden md:flex space-x-16 text-lg">
-          <Link to="/" className="hover:text-gray-300">
+        <nav className="hidden md:flex space-x-8 lg:space-x-16 text-lg">
+          <Link to="/" className="hover:text-heading-alt transition-colors">
             Home
           </Link>
-          <Link to="/about" className="hover:text-gray-300">
+          <Link
+            to="/about"
+            className="hover:text-heading-alt transition-colors"
+          >
             About
           </Link>
-          <Link to="/service" className="hover:text-gray-300">
+          <Link
+            to="/service"
+            className="hover:text-heading-alt transition-colors"
+          >
             Service
           </Link>
-          <Link to="/portfolio" className="hover:text-gray-300">
+          <Link
+            to="/portfolio"
+            className="hover:text-heading-alt transition-colors"
+          >
             Portfolio
           </Link>
-          <Link to="/contact" className="hover:text-gray-300">
+          <Link
+            to="/contact"
+            className="hover:text-heading-alt transition-colors"
+          >
             Contact
           </Link>
         </nav>
       </div>
       {isOpen && (
-        <div className="md:hidden px-4 pb-4">
+        <div className="md:hidden px-4 pb-4 bg-navbar">
           <nav className="flex flex-col space-y-2 text-lg mt-2">
             <Link
               to="/"
-              className="hover:text-gray-300"
+              className="hover:text-heading-alt transition-colors"
               onClick={() => setIsOpen(false)}
             >
               Home
             </Link>
             <Link
               to="/about"
-              className="hover:text-gray-300"
+              className="hover:text-heading-alt transition-colors"
               onClick={() => setIsOpen(false)}
             >
               About
             </Link>
             <Link
               to="/service"
-              className="hover:text-gray-300"
+              className="hover:text-heading-alt transition-colors"
               onClick={() => setIsOpen(false)}
             >
               Service
             </Link>
             <Link
               to="/portfolio"
-              className="hover:text-gray-300"
+              className="hover:text-heading-alt transition-colors"
               onClick={() => setIsOpen(false)}
             >
               Portfolio
             </Link>
             <Link
               to="/contact"
-              className="hover:text-gray-300"
+              className="hover:text-heading-alt transition-colors"
               onClick={() => setIsOpen(false)}
             >
               Contact

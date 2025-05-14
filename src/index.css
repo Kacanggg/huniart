@@ -1,1 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import "tailwindcss";
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+body,
+p,
+div,
+span,
+a,
+input,
+textarea,
+button {
+  font-family: "Roboto", sans-serif;
+}
+
+.bg-navbar {
+  background-color: #ffffff; /* Putih bersih */
+}
+.text-navbar {
+  color: #333333; /* Abu gelap untuk teks */
+}
+.text-heading {
+  color: #1a1a1a; /* Hitam soft untuk heading */
+}
+.text-heading-alt {
+  color: #708d81; /* Olive soft sebagai aksen alternatif */
+}
+.bg-icon {
+  color: #c9a76a;
+}
+.bg-cta {
+  background-color: #c9a76a; /* Gold lembut untuk CTA */
+}
+.text-cta {
+  color: #ffffff; /* Teks CTA tetap putih untuk kontras */
+}
+.bg-footer {
+  background-color: #f4f4f4; /* Abu terang, clean & elegan */
+}
+.text-footer {
+  color: #333333; /* Teks footer gelap untuk keterbacaan */
+}
+.text-footer-alt {
+  color: #1a1a1a; /* Alternatif teks footer lebih kuat */
+}
+.hover\:bg-hover-dark:hover {
+  background-color: #708d81; /* Hover aksen olive natural */
+}
