@@ -7,7 +7,7 @@ import About from "./pages/About";
 import Service from "./pages/Service";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
-import ButtonWhatsapp from "./components/Button/ButtonWhatsapp";
+import ButtonWhatsapp from "./components/button/ButtonWhatsapp";
 
 function App() {
   useEffect(() => {
