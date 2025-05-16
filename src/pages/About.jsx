@@ -31,7 +31,7 @@ const About = () => {
         },
       }}
     >
-      <div className="max-w-5xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <motion.h1
           className="text-4xl font-bold mb-4 text-[#5a4b41]"
           variants={fadeInUp}

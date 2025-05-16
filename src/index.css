@@ -22,35 +22,35 @@ button {
 }
 
 .bg-navbar {
-  background-color: #ffffff; /* Putih bersih */
+  background-color: #ffffff;
 }
 .text-navbar {
-  color: #333333; /* Abu gelap untuk teks */
+  color: #333333;
 }
 .text-heading {
-  color: #1a1a1a; /* Hitam soft untuk heading */
+  color: #1a1a1a;
 }
 .text-heading-alt {
-  color: #708d81; /* Olive soft sebagai aksen alternatif */
+  color: #708d81;
 }
 .bg-icon {
   color: #c9a76a;
 }
 .bg-cta {
-  background-color: #c9a76a; /* Gold lembut untuk CTA */
+  background-color: #c9a76a;
 }
 .text-cta {
-  color: #ffffff; /* Teks CTA tetap putih untuk kontras */
+  color: #ffffff;
 }
 .bg-footer {
-  background-color: #f4f4f4; /* Abu terang, clean & elegan */
+  background-color: #f4f4f4;
 }
 .text-footer {
-  color: #333333; /* Teks footer gelap untuk keterbacaan */
+  color: #333333;
 }
 .text-footer-alt {
-  color: #1a1a1a; /* Alternatif teks footer lebih kuat */
+  color: #1a1a1a;
 }
 .hover\:bg-hover-dark:hover {
-  background-color: #708d81; /* Hover aksen olive natural */
+  background-color: #708d81;
 }

@@ -1,4 +1,4 @@
-import { FaHome, FaHammer, FaCouch, FaStore, FaCube } from "react-icons/fa";
+import { FaHome, FaHammer } from "react-icons/fa";
 
 export const ServicesItems = [
   {

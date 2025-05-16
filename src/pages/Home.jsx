@@ -1,6 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import Button from "../components/button/ButtonLink";
 import interiorBg from "../assets/img/bg.avif";
+import emailjs from "emailjs-com";
 import { PortfolioItems } from "../data/PortfolioItems";
 import { FeaturesItems } from "../data/FeaturesItems";
 import { ServicesItems } from "../data/ServicesItems";
@@ -83,6 +84,30 @@ const Home = () => {
     };
   };
 
+  const [status, setStatus] = useState("");
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_r2f4szm",
+        "template_16skyc7",
+        e.target,
+        "f27ukZXgS8V50oOR8"
+      )
+      .then(
+        () => {
+          setStatus("Pesan berhasil dikirim!");
+          e.target.reset();
+        },
+        (error) => {
+          console.error(error);
+          setStatus("Gagal mengirim pesan.");
+        }
+      );
+  };
+
   return (
     <div>
       <motion.section
@@ -103,15 +128,15 @@ const Home = () => {
           initial="hidden"
           animate="visible"
           variants={staggerContainer}
-          className="relative z-10 text-center px-4 max-w-2xl"
+          className="relative z-10 text-center px-4 max-w-2xl pb-14"
         >
           <motion.h1
             variants={fadeInUp}
-            className="text-3xl md:text-5xl font-bold text-heading mb-4"
+            className="text-3xl md:text-5xl font-extrabold text-heading"
           >
-            Mewujudkan Interior Impian Anda
+            MEWUJUDKAN INTERIOR IMPIAN ANDA
           </motion.h1>
-          <motion.p variants={fadeInUp} className="text-base md:text-lg mb-6">
+          <motion.p variants={fadeInUp} className="text-sm md:text-lg -mb-3">
             Kami hadir untuk mendesain ruang yang nyaman, fungsional, dan penuh
             gaya.
           </motion.p>
@@ -120,7 +145,6 @@ const Home = () => {
           </motion.div>
         </motion.div>
       </motion.section>
-
       <motion.section
         initial="hidden"
         whileInView="visible"
@@ -159,7 +183,6 @@ const Home = () => {
           </motion.div>
         </div>
       </motion.section>
-
       <motion.section
         initial="hidden"
         whileInView="visible"
@@ -223,7 +246,6 @@ const Home = () => {
           </motion.div>
         </div>
       </motion.section>
-
       <motion.section
         initial="hidden"
         whileInView="visible"
@@ -247,13 +269,13 @@ const Home = () => {
           <motion.div variants={scaleIn} className="relative">
             <div
               ref={prevRef}
-              className="absolute top-1/2 left-2 md:-left-6 z-10 transform -translate-y-1/2 cursor-pointer bg-white shadow-md p-2 rounded-full hover:bg-hover-dark hover:text-white transition"
+              className="hidden md:flex absolute top-1/2 left-2 md:-left-6 z-10 transform -translate-y-1/2 cursor-pointer bg-white shadow-md p-2 rounded-full hover:bg-hover-dark hover:text-white transition"
             >
               <ChevronLeft className="w-5 h-5 md:w-6 md:h-6 text-navbar" />
             </div>
             <div
               ref={nextRef}
-              className="absolute top-1/2 right-2 md:-right-6 z-10 transform -translate-y-1/2 cursor-pointer bg-white shadow-md p-2 rounded-full hover:bg-hover-dark hover:text-white transition"
+              className="hidden md:flex absolute top-1/2 right-2 md:-right-6 z-10 transform -translate-y-1/2 cursor-pointer bg-white shadow-md p-2 rounded-full hover:bg-hover-dark hover:text-white transition"
             >
               <ChevronRight className="w-5 h-5 md:w-6 md:h-6 text-navbar" />
             </div>
@@ -305,11 +327,10 @@ const Home = () => {
             </Swiper>
           </motion.div>
           <motion.div variants={fadeInUp} className="text-center mt-8">
-            <Button text="Lihat Semua Portfolio" href="/portfolio" />
+            <Button text="Lihat Portfolio" href="/portfolio" />
           </motion.div>
         </div>
       </motion.section>
-
       <motion.section
         initial="hidden"
         whileInView="visible"
@@ -323,109 +344,79 @@ const Home = () => {
             Hubungi kami untuk konsultasi atau kerja sama proyek interior Anda.
           </p>
         </motion.div>
-
-        <div className="grid md:grid-cols-2 gap-6 justify-center items-center">
-          <motion.div
-            variants={slideIn("right")}
-            className="space-y-4 text-navbar mx-auto"
-          >
-            <motion.div
-              whileHover={{ x: 5 }}
-              className="flex items-center gap-2"
-            >
-              <FaPhone className="text-heading-alt" />
-              <span>+62 821 1149 1259</span>
-            </motion.div>
-            <motion.div
-              whileHover={{ x: 5 }}
-              className="flex items-center gap-2"
-            >
-              <FaEnvelope className="text-heading-alt" />
-              <span>huniart.interior@gmail.com</span>
-            </motion.div>
-            <motion.div
-              whileHover={{ x: 5 }}
-              className="flex items-start gap-2"
-            >
-              <FaMapMarkerAlt className="text-heading-alt mt-1" />
-              <span>
-                Jl. H. Juhaman No.128, RT.6/RW.8,
-                <br />
-                Lubang Buaya, Kec. Cipayung, Kota
-                <br />
-                Jakarta Timur, DKI Jakarta 13810,
-                <br />
-                Indonesia
-              </span>
-            </motion.div>
-
-            <div className="flex gap-4 mt-2 text-xl text-heading-alt">
-              <motion.a
-                whileHover={{ y: -5, scale: 1.2 }}
-                href="https://facebook.com"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FaFacebook />
-              </motion.a>
-              <motion.a
-                whileHover={{ y: -5, scale: 1.2 }}
-                href="https://instagram.com"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FaInstagram />
-              </motion.a>
-              <motion.a
-                whileHover={{ y: -5, scale: 1.2 }}
-                href="https://linkedin.com"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <FaLinkedin />
-              </motion.a>
-            </div>
-
-            <motion.div variants={scaleIn} className="mt-2">
-              <iframe
-                title="Lokasi Kantor"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d495.7218712390788!2d106.89765896364844!3d-6.293277746608071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f2a659394fa1%3A0x6bd2b8022aad503b!2sJl.%20H.%20Juhaman%20No.128%2C%20RT.8%2FRW.6%2C%20Lubang%20Buaya%2C%20Kec.%20Cipayung%2C%20Kota%20Jakarta%20Timur%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2013810!5e0!3m2!1sid!2sid!4v1747053850874!5m2!1sid!2sid"
-                width="250"
-                height="250"
-                className="border rounded-lg"
-                allowFullScreen=""
-                loading="lazy"
-              ></iframe>
-            </motion.div>
-          </motion.div>
-
+        <div className="grid grid-cols-1 place-items-center">
           <motion.form
             variants={slideIn("left")}
-            className="space-y-4 max-w-md w-full mx-auto"
+            className="space-y-4 w-full max-w-md"
+            onSubmit={sendEmail}
           >
+            <h2 className="text-2xl font-serif font-semibold mb-4">
+              Formulir Kontak
+            </h2>
+
+            <label className="block text-sm font-medium text-gray-700 mb-1">
+              Nama Anda
+            </label>
             <input
               type="text"
+              name="nama"
               placeholder="Nama Anda"
               className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-heading-alt"
+              required
             />
+
+            <label className="block text-sm font-medium text-gray-700 mb-1">
+              Email Anda
+            </label>
             <input
               type="email"
+              name="email"
               placeholder="Email Anda"
               className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-heading-alt"
+              required
             />
+
+            <label className="block text-sm font-medium text-gray-700 mb-1">
+              Subjek Anda
+            </label>
+            <input
+              type="text"
+              name="subjek"
+              placeholder="Subjek Anda"
+              className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-heading-alt"
+              required
+            />
+
+            <label className="block text-sm font-medium text-gray-700 mb-1">
+              Pesan Anda
+            </label>
             <textarea
+              name="pesan"
               placeholder="Pesan Anda"
               rows="5"
               className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-heading-alt"
+              required
             />
+
             <motion.button
               whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
               type="submit"
-              className="bg-cta text-cta py-2 px-6 rounded-lg hover:bg-hover-dark transition"
+              className="bg-cta text-cta py-2 px-6 rounded-lg hover:bg-hover-dark transition w-full"
             >
               Kirim Pesan
             </motion.button>
+
+            {status && (
+              <div
+                className={`mt-4 text-sm p-3 rounded ${
+                  status.includes("berhasil")
+                    ? "bg-green-100 text-green-700"
+                    : "bg-red-100 text-red-700"
+                }`}
+              >
+                {status}
+              </div>
+            )}
           </motion.form>
         </div>
       </motion.section>

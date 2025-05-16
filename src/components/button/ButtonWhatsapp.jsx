@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FaWhatsapp, FaTimes } from "react-icons/fa";
+import logo from "../../assets/img/logo.png";
 
 const ButtonWa = ({
   phoneNumber = "6282111491259",
@@ -29,12 +30,7 @@ const ButtonWa = ({
           >
             <div className="flex justify-between items-center mb-2">
               <h3 className="font-semibold text-gray-800 flex items-center">
-                <img
-                  src="/path-to-your-logo.png"
-                  alt="Logo"
-                  className="w-6 h-6 mr-2"
-                />
-                Huniart
+                <img src={logo} alt="Logo" className="w-auto h-8 mr-2" />
               </h3>
               <button
                 onClick={() => setIsOpen(false)}
@@ -43,12 +39,10 @@ const ButtonWa = ({
                 <FaTimes />
               </button>
             </div>
-
             <p className="text-sm text-gray-600 mb-3">
               Ada yang bisa kami bantu? Konsultasikan kebutuhan interior Anda
               sekarang!
             </p>
-
             <a
               href={whatsappURL}
               target="_blank"
@@ -60,14 +54,13 @@ const ButtonWa = ({
           </motion.div>
         )}
       </AnimatePresence>
-
       <motion.button
         className="bg-green-500 w-14 h-14 rounded-full flex items-center justify-center shadow-lg relative"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         onClick={() => setIsOpen(!isOpen)}
         style={{
-          WebkitTransform: "translateZ(0)", // Memastikan button tetap terlihat pada mobile
+          WebkitTransform: "translateZ(0)",
           transform: "translateZ(0)",
           marginBottom: "env(safe-area-inset-bottom, 0px)",
           marginRight: "env(safe-area-inset-right, 0px)",
@@ -84,7 +77,6 @@ const ButtonWa = ({
             repeat: Infinity,
           }}
         />
-
         <FaWhatsapp className="text-white text-2xl z-10" />
       </motion.button>
     </div>

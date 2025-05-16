@@ -17,8 +17,6 @@ function App() {
       "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover";
     document.head.appendChild(viewportMeta);
 
-    // Menambahkan event listener untuk iOS safe areas
-    // dan mengatur tinggi vh yang akurat untuk mobile browsers
     const setVh = () => {
       const vh = window.innerHeight * 0.01;
       document.documentElement.style.setProperty("--vh", `${vh}px`);
@@ -36,8 +34,8 @@ function App() {
 
   return (
     <Router>
-      <div className="flex flex-col min-h-screen">
-        <Header />
+      <Header />
+      <div className="flex flex-col min-h-screen overflow-x-hidden">
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />

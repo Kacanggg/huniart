@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import emailjs from "emailjs-com";
 import { motion } from "framer-motion";
 import interiorBg from "../assets/img/bg.avif";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
@@ -16,9 +17,49 @@ const fadeInUp = {
   }),
 };
 
+const slideIn = (direction) => {
+  return {
+    hidden: {
+      x: direction === "left" ? -50 : direction === "right" ? 50 : 0,
+      opacity: 0,
+    },
+    visible: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+        ease: "easeOut",
+      },
+    },
+  };
+};
+
 const Contact = () => {
+  const [status, setStatus] = useState("");
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_r2f4szm",
+        "template_16skyc7",
+        e.target,
+        "f27ukZXgS8V50oOR8"
+      )
+      .then(
+        () => {
+          setStatus("Pesan berhasil dikirim!");
+          e.target.reset();
+        },
+        (error) => {
+          console.error(error);
+          setStatus("Gagal mengirim pesan.");
+        }
+      );
+  };
   return (
-    <div className="max-w-5xl mx-auto">
+    <div className="max-w-7xl mx-auto">
       <motion.img
         src={interiorBg}
         alt="Living room interior"
@@ -57,11 +98,11 @@ const Contact = () => {
         </motion.p>
 
         <motion.div
-          className="bg-[#FFFEF9] rounded-md p-6 md:p-10 flex flex-col md:flex-row md:space-x-20 max-w-4xl mx-auto"
+          className="bg-[#FFFEF9] rounded-md p-6 md:p-10 flex flex-col md:flex-row md:space-x-96 max-w-7xl mx-auto"
           variants={fadeInUp}
           custom={2}
         >
-          <motion.div className="flex-1 space-y-8 mb-10 md:mb-0">
+          <motion.div className="flex-1 space-y-8 mb-4 md:mb-0">
             <motion.div
               className="flex items-start space-x-4"
               variants={fadeInUp}
@@ -113,9 +154,8 @@ const Contact = () => {
             </motion.div>
             <motion.div className="w-full mt-8" variants={fadeInUp} custom={6}>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126908.47602440404!2d106.7806424!3d-6.2087635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e699194b9e49b61%3A0x82f0359d5a2999a8!2sJakarta%2C%20Indonesia!5e0!3m2!1sen!2sid!4v1678982892613!5m2!1sen!2sid"
-                width="100%"
-                height="300"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.775623965823!2d106.89517487507061!3d-6.293192061595008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f2a659394fa1%3A0x6bd2b8022aad503b!2sJl.%20H.%20Juhaman%20No.128%2C%20RT.8%2FRW.6%2C%20Lubang%20Buaya%2C%20Kec.%20Cipayung%2C%20Kota%20Jakarta%20Timur%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2013810!5e0!3m2!1sid!2sid!4v1747359876916!5m2!1sid!2sid"
+                className="w-full md:w-70 h-60 md:h-70 border-0"
                 style={{ border: 0 }}
                 allowFullScreen=""
                 loading="lazy"
@@ -125,90 +165,77 @@ const Contact = () => {
             </motion.div>
           </motion.div>
           <motion.form
-            className="flex-1 space-y-6"
-            method="POST"
-            action="#"
-            noValidate
-            variants={fadeInUp}
-            custom={7}
+            variants={slideIn("left")}
+            className="space-y-4 w-full max-w-md"
+            onSubmit={sendEmail}
           >
             <h2 className="text-2xl font-serif font-semibold mb-4">
               Formulir Kontak
             </h2>
-            {[
-              {
-                id: "nama",
-                label: "Nama Lengkap",
-                type: "text",
-                placeholder: "Isikan Nama Anda",
-              },
-              {
-                id: "email",
-                label: "Email",
-                type: "email",
-                placeholder: "Isikan Email Anda",
-              },
-            ].map((field, index) => (
-              <motion.div key={field.id} variants={fadeInUp} custom={8 + index}>
-                <label
-                  htmlFor={field.id}
-                  className="block mb-1 text-base font-normal"
-                >
-                  {field.label}
-                </label>
-                <input
-                  className="w-full rounded border border-[#E9E2D0] bg-[#FFFEF9] px-3 py-2 text-[#1B2A17] placeholder-[#A69F8C] focus:outline-none focus:ring-2 focus:ring-[#1B2A17]"
-                  id={field.id}
-                  name={field.id}
-                  type={field.type}
-                  placeholder={field.placeholder}
-                />
-              </motion.div>
-            ))}
-            <motion.div variants={fadeInUp} custom={10}>
-              <label
-                htmlFor="subjek"
-                className="block mb-1 text-base font-normal"
-              >
-                Subjek
-              </label>
-              <select
-                className="w-full rounded border border-[#E9E2D0] bg-[#FFFEF9] px-3 py-2 text-[#1B2A17] focus:outline-none focus:ring-2 focus:ring-[#1B2A17]"
-                id="subjek"
-                name="subjek"
-                defaultValue=""
-              >
-                <option disabled value="">
-                  Pilih Subjek
-                </option>
-                <option value="konsultasi">Konsultasi Proyek</option>
-                <option value="penawaran">Permintaan Penawaran</option>
-                <option value="lainnya">Lainnya</option>
-              </select>
-            </motion.div>
-            <motion.div variants={fadeInUp} custom={11}>
-              <label
-                htmlFor="pesan"
-                className="block mb-1 text-base font-normal"
-              >
-                Pesan
-              </label>
-              <textarea
-                id="pesan"
-                name="pesan"
-                rows="5"
-                placeholder="Tuliskan pesan Anda di sini"
-                className="w-full rounded border border-[#E9E2D0] bg-[#FFFEF9] px-3 py-2 text-[#1B2A17] placeholder-[#A69F8C] focus:outline-none focus:ring-2 focus:ring-[#1B2A17]"
-              ></textarea>
-            </motion.div>
+
+            <label className="block text-sm font-medium text-gray-700 mb-1">
+              Nama Anda
+            </label>
+            <input
+              type="text"
+              name="nama"
+              placeholder="Nama Anda"
+              className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-heading-alt"
+              required
+            />
+
+            <label className="block text-sm font-medium text-gray-700 mb-1">
+              Email Anda
+            </label>
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Anda"
+              className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-heading-alt"
+              required
+            />
+
+            <label className="block text-sm font-medium text-gray-700 mb-1">
+              Subjek Anda
+            </label>
+            <input
+              type="text"
+              name="subjek"
+              placeholder="Subjek Anda"
+              className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-heading-alt"
+              required
+            />
+
+            <label className="block text-sm font-medium text-gray-700 mb-1">
+              Pesan Anda
+            </label>
+            <textarea
+              name="pesan"
+              placeholder="Pesan Anda"
+              rows="5"
+              className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-heading-alt"
+              required
+            />
+
             <motion.button
+              whileHover={{ scale: 1.05 }}
               type="submit"
-              className="bg-[#1B2A17] text-[#FFFEF9] px-6 py-2 rounded hover:bg-[#32452b] transition-colors duration-200"
-              variants={fadeInUp}
-              custom={12}
+              className="bg-cta text-cta py-2 px-6 rounded-lg hover:bg-hover-dark transition w-full"
             >
               Kirim Pesan
             </motion.button>
+
+            {status && (
+              <div
+                className={`mt-4 text-sm p-3 rounded ${
+                  status.includes("berhasil")
+                    ? "bg-green-100 text-green-700"
+                    : "bg-red-100 text-red-700"
+                }`}
+              >
+                {status}
+              </div>
+            )}
           </motion.form>
         </motion.div>
       </motion.section>

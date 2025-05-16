@@ -13,19 +13,16 @@ const Header = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
-
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
     <header
-      className={`w-full py-4 sticky top-0 z-50 shadow-md transition-colors duration-300 ${
-        isScrolled
-          ? "bg-navbar/80 backdrop-blur-md text-navbar"
-          : "bg-navbar text-navbar"
+      className={`w-full sticky top-0 z-50 transition-colors duration-300 ${
+        isScrolled ? "bg-navbar text-navbar" : "bg-navbar text-navbar"
       }`}
     >
-      <div className="w-full px-4 md:px-20 flex justify-between items-center">
+      <div className="max-w-screen-xl mx-auto px-4 md:px-1 flex justify-between items-center py-2 md:py-3">
         <Link to="/" className="flex items-center space-x-2">
           <img src={logo} alt="Logo" className="h-10 w-auto" />
         </Link>
@@ -65,44 +62,46 @@ const Header = () => {
         </nav>
       </div>
       {isOpen && (
-        <div className="md:hidden px-4 pb-4 bg-navbar">
-          <nav className="flex flex-col space-y-2 text-lg mt-2">
-            <Link
-              to="/"
-              className="hover:text-heading-alt transition-colors"
-              onClick={() => setIsOpen(false)}
-            >
-              Home
-            </Link>
-            <Link
-              to="/about"
-              className="hover:text-heading-alt transition-colors"
-              onClick={() => setIsOpen(false)}
-            >
-              About
-            </Link>
-            <Link
-              to="/service"
-              className="hover:text-heading-alt transition-colors"
-              onClick={() => setIsOpen(false)}
-            >
-              Service
-            </Link>
-            <Link
-              to="/portfolio"
-              className="hover:text-heading-alt transition-colors"
-              onClick={() => setIsOpen(false)}
-            >
-              Portfolio
-            </Link>
-            <Link
-              to="/contact"
-              className="hover:text-heading-alt transition-colors"
-              onClick={() => setIsOpen(false)}
-            >
-              Contact
-            </Link>
-          </nav>
+        <div className="md:hidden bg-navbar px-4 pb-4">
+          <div className="max-w-screen-xl mx-auto">
+            <nav className="flex flex-col space-y-2 text-lg mt-2">
+              <Link
+                to="/"
+                className="hover:text-heading-alt transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                Home
+              </Link>
+              <Link
+                to="/about"
+                className="hover:text-heading-alt transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                About
+              </Link>
+              <Link
+                to="/service"
+                className="hover:text-heading-alt transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                Service
+              </Link>
+              <Link
+                to="/portfolio"
+                className="hover:text-heading-alt transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                Portfolio
+              </Link>
+              <Link
+                to="/contact"
+                className="hover:text-heading-alt transition-colors"
+                onClick={() => setIsOpen(false)}
+              >
+                Contact
+              </Link>
+            </nav>
+          </div>
         </div>
       )}
     </header>
