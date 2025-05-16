@@ -6,6 +6,7 @@ const ButtonLink = ({ text = "Klik di sini", href = "#" }) => {
       <a
         href={href}
         rel="noopener noreferrer"
+        target="_blank"
         className="px-6 py-3 bg-cta text-cta hover:bg-hover-dark text-white rounded-lg text-base font-medium transition duration-300"
       >
         {text}
