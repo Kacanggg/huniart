@@ -1,6 +1,6 @@
 import React from "react";
 
-const ButtonLink = ({ text = "Klik di sini", href = "#" }) => {
+const ButtonLink = ({ text = "Klik di sini", href = "/" }) => {
   return (
     <div className="flex justify-center mt-8">
       <a
