@@ -1,41 +1,68 @@
 import React from "react";
 import { ServicesItems } from "../data/ServicesItems";
+import Button from "../components/button/ButtonLink";
+import { fadeInUp } from "../components/animation/Animation";
+import { motion } from "framer-motion";
+import { FaTools } from "react-icons/fa";
 
-const Service = () => {
+const Services = () => {
   return (
-    <div className="py-16 bg-white">
-      <div className="max-w-6xl mx-auto px-4 text-center">
-        <h2 className="text-3xl font-bold text-earthy-primary mb-4">
-          Layanan Kami
-        </h2>
-        <p className="text-earthy-dark mb-10 max-w-2xl mx-auto">
-          Kami menyediakan berbagai layanan desain interior terbaik untuk
-          mewujudkan ruang impian Anda. Setiap proyek kami tangani dengan
-          dedikasi dan profesionalisme tinggi.
-        </p>
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
+    <section className="bg-[#fdfaf4] py-16 px-6 md:px-16 text-[#3b3b3b] overflow-hidden">
+      <div className="max-w-7xl mx-auto text-center">
+        <motion.h2
+          className="flex justify-center items-center gap-3 text-4xl font-semibold text-amber-900 mb-4"
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <FaTools className="text-amber-700" /> Layanan Kami
+        </motion.h2>
+        <motion.p
+          className="text-lg text-amber-800 mb-12 max-w-3xl mx-auto"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          viewport={{ once: true }}
+        >
+          Kami menyediakan solusi lengkap desain dan konstruksi interior yang
+          menyatu dengan estetika alami dan kenyamanan ruang.
+        </motion.p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 max-w-4xl mx-auto text-left">
           {ServicesItems.map((service, index) => (
-            <div
+            <motion.div
               key={index}
-              className="bg-earthy-bg p-6 rounded-2xl shadow hover:shadow-lg transition duration-300 text-center"
+              className="bg-white rounded-xl shadow p-10 border-l-4 border-amber-600"
+              custom={index}
+              initial="hidden"
+              whileInView="visible"
+              variants={fadeInUp}
+              viewport={{ once: true }}
             >
-              <div className="mb-4 flex justify-center">
-                {React.cloneElement(service.icon, {
-                  className: "w-12 h-12 text-earthy-primary",
-                })}
+              <div className="flex items-center gap-4 mb-3">
+                <div className="p-2 bg-amber-100 rounded-full">
+                  {service.icon}
+                </div>
+                <h3 className="text-xl font-semibold text-amber-900">
+                  {service.title}
+                </h3>
               </div>
-              <h3 className="text-xl font-semibold text-earthy-primary">
-                {service.title}
-              </h3>
-              <p className="text-earthy-dark text-sm text-center mt-2">
-                {service.description}
-              </p>
-            </div>
+              <p className="text-amber-800">{service.description}</p>
+            </motion.div>
           ))}
         </div>
+        <motion.div
+          className="mt-12"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.5 }}
+          viewport={{ once: true }}
+        >
+          <Button text="Hubungi Kami" href="https://wa.me/6282111491259" />
+        </motion.div>
       </div>
-    </div>
+    </section>
   );
 };
 
-export default Service;
+export default Services;

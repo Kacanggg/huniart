@@ -1,20 +1,8 @@
 import React from "react";
+import interiorBg from "../assets/img/bg.jpg";
+import { fadeInUp } from "../components/animation/Animation";
 import { motion } from "framer-motion";
 import { FaEye, FaBullseye } from "react-icons/fa";
-import interiorBg from "../assets/img/bg.avif";
-
-const fadeInUp = {
-  hidden: { opacity: 0, y: 30 },
-  visible: (i = 0) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: i * 0.2,
-      duration: 0.6,
-      ease: "easeOut",
-    },
-  }),
-};
 
 const About = () => {
   return (

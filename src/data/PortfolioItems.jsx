@@ -1,34 +1,52 @@
-import interiorBg from "../assets/img/bg.avif";
+import interiorBg from "../assets/img/bg.jpg";
 
 export const PortfolioItems = [
   {
-    title: "Ruang Tamu Modern",
+    id: 1,
+    title: "Project 044 – Interior Ms. S Cibubur",
+    category: "Interior Rumah",
     image: interiorBg,
-    description: "Desain ruang tamu dengan nuansa modern dan elegan.",
+    description:
+      "Desain interior rumah dengan gaya modern minimalis yang mengutamakan kenyamanan dan fungsionalitas.",
   },
   {
-    title: "Kantor Minimalis",
+    id: 2,
+    title: "Project 041 – Garage Japandi Style",
+    category: "Garage",
     image: interiorBg,
-    description: "Penataan ruang kantor agar produktif dan nyaman.",
+    description:
+      "Garasi dengan sentuhan Japandi, menggabungkan elemen Jepang dan Skandinavia untuk kesan bersih dan alami.",
   },
   {
-    title: "Ruang Tamu Modern",
+    id: 3,
+    title: "Project 037 – Mushola Modern Style",
+    category: "Mushola",
     image: interiorBg,
-    description: "Desain ruang tamu dengan nuansa modern dan elegan.",
+    description:
+      "Mushola dengan desain modern yang menghadirkan suasana tenang dan khusyuk untuk beribadah.",
   },
   {
-    title: "Kantor Minimalis",
+    id: 4,
+    title: "Project 031 – Kitchen dan Dining Area Modern Style",
+    category: "Dapur",
     image: interiorBg,
-    description: "Penataan ruang kantor agar produktif dan nyaman.",
+    description:
+      "Area dapur dan ruang makan dengan desain modern yang fungsional dan estetis.",
   },
   {
-    title: "Ruang Tamu Modern",
+    id: 5,
+    title: "Project 028 – Bedroom Earth Tone",
+    category: "Kamar Tidur",
     image: interiorBg,
-    description: "Desain ruang tamu dengan nuansa modern dan elegan.",
+    description:
+      "Kamar tidur yang hangat dan nyaman dengan palet warna earthy, menciptakan suasana santai dan alami.",
   },
   {
-    title: "Kantor Minimalis",
+    id: 6,
+    title: "Project 019 – Workspace Natural Wood",
+    category: "Ruang Kerja",
     image: interiorBg,
-    description: "Penataan ruang kantor agar produktif dan nyaman.",
+    description:
+      "Ruang kerja dengan dominasi kayu alami yang mendukung produktivitas dan kenyamanan visual.",
   },
 ];

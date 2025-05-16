@@ -1,16 +1,16 @@
-import { FaHome, FaHammer } from "react-icons/fa";
+import { FaCouch, FaDraftingCompass } from "react-icons/fa";
 
 export const ServicesItems = [
   {
-    icon: <FaHome className="text-4xl bg-icon mb-4" />,
-    title: "Desain Interior Hunian",
+    icon: <FaCouch className="w-8 h-8 bg-icon" />,
+    title: "Jasa Desain Interior",
     description:
-      "Kami merancang ruang tinggal yang nyaman dan estetis sesuai dengan gaya hidup dan preferensi Anda.",
+      "Mewujudkan desain interior yang estetis dan fungsional sesuai dengan kebutuhan dan gaya hidup Anda.",
   },
   {
-    icon: <FaHammer className="text-4xl bg-icon mb-4" />,
-    title: "Renovasi dan Makeover Ruang",
+    icon: <FaDraftingCompass className="w-8 h-8 bg-icon" />,
+    title: "Jasa Desain Arsitektur",
     description:
-      "Transformasi total atau parsial ruang Anda agar tampak lebih modern, segar, dan fungsional.",
+      "Perencanaan desain arsitektur bangunan dengan pendekatan profesional dan amanah.",
   },
 ];
