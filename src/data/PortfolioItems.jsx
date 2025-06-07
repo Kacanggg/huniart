@@ -1,4 +1,4 @@
-import interiorBg1 from "../assets/img/Project-Interior-Alumunium-Kitchenset.jpg";
+import interiorBg1 from "../assets/img/Project-Interior-Alumunium-Kitchenset.jpeg";
 import interiorBg2 from "../assets/img/Project-Interior-Apartement-Kitchenset.jpg";
 import interiorBg3 from "../assets/img/Project-Interior-Bathroom.jpeg";
 import interiorBg4 from "../assets/img/Project-Interior-Classic-Kitchenset.jpg";
