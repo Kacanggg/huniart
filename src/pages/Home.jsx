@@ -179,7 +179,7 @@ const Home = () => {
           </div>
 
           <motion.div variants={fadeInUp} className="mt-12 text-center">
-            <Button text="Lihat Detail" href="/service" />
+            <Button text="Lihat Detail" to="/service" />
           </motion.div>
         </div>
       </motion.section>
@@ -264,7 +264,7 @@ const Home = () => {
             </Swiper>
           </motion.div>
           <motion.div variants={fadeInUp} className="text-center mt-8">
-            <Button text="Lihat Portfolio" href="/portfolio" />
+            <Button text="Lihat Portfolio" to="/portfolio" />
           </motion.div>
         </div>
       </motion.section>

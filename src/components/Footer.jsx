@@ -13,7 +13,7 @@ import {
 const Footer = () => {
   return (
     <footer className="bg-footer text-footer py-10">
-      <div className="max-w-screen-xl mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div className="max-w-screen-xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
           <img src={logo} alt="Logo" className="w-30 h-14 mb-5" />
           <p className="text-footer">
@@ -61,29 +61,6 @@ const Footer = () => {
                 className="hover:text-heading transition-colors"
               >
                 Contact
-              </Link>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h3 className="text-xl font-semibold mb-4 text-footer-alt">
-            Services
-          </h3>
-          <ul className="space-y-2 text-footer">
-            <li>
-              <Link
-                to="/service"
-                className="hover:text-heading transition-colors"
-              >
-                Huniart Interior
-              </Link>
-            </li>
-            <li>
-              <Link
-                to="/service"
-                className="hover:text-heading transition-colors"
-              >
-                Huniart Architect
               </Link>
             </li>
           </ul>
