@@ -32,7 +32,7 @@ const About = () => {
           variants={fadeInUp}
           custom={1}
         >
-          Kami adalah perusahaan desain interior yang menghadirkan solusi
+          Kami adalah perusahaan desain arsitektur dan interior yang menghadirkan solusi
           kreatif untuk menciptakan ruang yang fungsional, estetis, dan nyaman.
           Dengan pendekatan personal, kami melayani klien dari berbagai sektor,
           mulai dari rumah tinggal hingga ruang komersial.

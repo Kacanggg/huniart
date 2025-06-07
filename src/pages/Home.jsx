@@ -132,7 +132,7 @@ const Home = () => {
               Layanan Kami
             </h2>
             <p className="text-navbar">
-              Kami menyediakan layanan desain interior mulai dari konsultasi
+              Kami menyediakan layanan desain arsitektur dan interior mulai dari konsultasi
               hingga eksekusi, memastikan setiap proyek dikerjakan dengan
               kualitas tinggi dan perhatian pada detail.
             </p>
@@ -201,7 +201,7 @@ const Home = () => {
             variants={fadeInUp}
             className="text-center text-footer mb-12 max-w-xl mx-auto"
           >
-            Beberapa proyek interior terbaik yang telah kami selesaikan.
+            Beberapa proyek desain arsitektur dan interior terbaik yang telah kami selesaikan.
           </motion.p>
           <motion.div variants={scaleIn} className="relative">
             <div
@@ -278,7 +278,7 @@ const Home = () => {
         <motion.div variants={fadeInUp} className="text-center mb-10">
           <h2 className="text-3xl font-bold text-heading mb-2">Kontak Kami</h2>
           <p className="text-navbar">
-            Hubungi kami untuk konsultasi atau kerja sama proyek interior Anda.
+            Hubungi kami untuk konsultasi atau kerja sama proyek desain arsitektur dan interior Anda.
           </p>
         </motion.div>
         <div className="grid grid-cols-1 place-items-center">

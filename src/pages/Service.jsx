@@ -25,7 +25,7 @@ const Services = () => {
           transition={{ duration: 0.8, delay: 0.3 }}
           viewport={{ once: true }}
         >
-          Kami menyediakan solusi lengkap desain dan konstruksi interior yang
+          Kami menyediakan solusi lengkap desain arsitektur dan interior yang
           menyatu dengan estetika alami dan kenyamanan ruang.
         </motion.p>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 max-w-4xl mx-auto text-left">

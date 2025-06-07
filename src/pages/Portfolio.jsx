@@ -26,7 +26,7 @@ const Portfolio = () => {
         </motion.div>
 
         <motion.p className="text-lg text-amber-800 mb-12" variants={fadeInUp}>
-          Jelajahi proyek-proyek interior unggulan kami yang menggabungkan
+          Jelajahi proyek-proyek desain arsitektur dan interior unggulan kami yang menggabungkan
           estetika natural, fungsionalitas, dan kenyamanan dalam setiap ruang.
           Setiap karya mencerminkan perhatian pada detail dan karakter unik
           klien kami.

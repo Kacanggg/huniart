@@ -40,7 +40,7 @@ const Contact = () => {
           custom={1}
         >
           Kami senang mendengar dari Anda. Jika Anda memiliki pertanyaan, ingin
-          berkonsultasi mengenai proyek interior Anda, atau membutuhkan
+          berkonsultasi mengenai proyek desain arsitektur dan interior Anda, atau membutuhkan
           informasi lebih lanjut, jangan ragu untuk menghubungi kami.
         </motion.p>
 
