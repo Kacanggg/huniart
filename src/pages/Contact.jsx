@@ -1,5 +1,5 @@
 import React from "react";
-import interiorBg from "../assets/img/bg.jpg";
+import interiorBg from "../assets/img/Project-Arsitektur-Tebet,Jakarta-Selatan.jpeg";
 import ContactForm from "../components/form/ContactForm";
 import { fadeInUp, slideIn } from "../components/animation/Animation";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";

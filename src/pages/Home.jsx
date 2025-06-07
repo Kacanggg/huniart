@@ -1,6 +1,14 @@
 import React, { useRef, useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import Button from "../components/button/ButtonLink";
-import interiorBg from "../assets/img/bg.jpg";
+import interiorBg from "../assets/img/Project-Arsitektur-Bekasi-16x9-blended.jpeg";
+import Layanan1 from "../assets/img/Project-Arsitektur-Kelapa-Gading,Jakarta-Utara.jpeg";
+import Layanan2 from "../assets/img/Project-Arsitektur-Tebet,Jakarta-Selatan.jpeg";
+// import interiorBg from "../assets/img/Project-Arsitektur-Bekasi-16x9-blended.jpeg";
+// import interiorBg from "../assets/img/Project-Arsitektur-Bekasi-16x9-blended.jpeg";
+// import interiorBg from "../assets/img/Project-Arsitektur-Bekasi-16x9-blended.jpeg";
+// import interiorBg from "../assets/img/Project-Arsitektur-Bekasi-16x9-blended.jpeg";
+// import interiorBg from "../assets/img/Project-Arsitektur-Bekasi-16x9-blended.jpeg";
 import ContactForm from "../components/form/ContactForm";
 import { PortfolioItems } from "../data/PortfolioItems";
 import { FeaturesItems } from "../data/FeaturesItems";
@@ -38,10 +46,11 @@ const Home = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        className="relative h-[300px] md:h-[720px] bg-cover bg-[top_20%] sm:bg-center bg-no-repeat text-white flex items-center justify-center md:bg-fixed bg-local"
+        className="relative h-[360px] sm:h-[480px] md:h-[640px] lg:h-[720px] bg-cover bg-center bg-no-repeat text-white flex items-center justify-center bg-fixed"
         style={{
           backgroundImage: `url(${interiorBg})`,
-          backgroundSize: window.innerWidth < 640 ? "contain" : "cover",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
           transform: `translateY(${scrollY * 0.2}px)`,
           zIndex: 0,
@@ -52,15 +61,15 @@ const Home = () => {
           initial="hidden"
           animate="visible"
           variants={staggerContainer}
-          className="relative z-10 text-center px-4 max-w-2xl pb-14"
+          className="relative z-10 text-center px-4 max-w-2xl pb-5"
         >
           <motion.h1
             variants={fadeInUp}
-            className="text-3xl md:text-5xl font-extrabold text-heading"
+            className="text-2xl md:text-5xl font-extrabold text-heading"
           >
             MEWUJUDKAN INTERIOR IMPIAN ANDA
           </motion.h1>
-          <motion.p variants={fadeInUp} className="text-sm md:text-lg -mb-3">
+          <motion.p variants={fadeInUp} className="text-sm md:text-lg -mb-6">
             Kami hadir untuk mendesain ruang yang nyaman, fungsional, dan penuh
             gaya.
           </motion.p>
@@ -128,6 +137,7 @@ const Home = () => {
               kualitas tinggi dan perhatian pada detail.
             </p>
           </motion.div>
+
           <div className="space-y-16">
             {ServicesItems.map((service, index) => (
               <motion.div
@@ -144,11 +154,13 @@ const Home = () => {
                   variants={slideIn(index % 2 !== 0 ? "right" : "left")}
                   className="w-full md:w-1/2"
                 >
-                  <img
-                    src={interiorBg}
-                    alt={service.title}
-                    className="rounded-2xl shadow-md w-full h-72 object-cover"
-                  />
+                  <Link to="/service">
+                    <img
+                      src={index === 0 ? Layanan1 : Layanan2}
+                      alt={service.title}
+                      className="rounded-2xl shadow-md w-full h-72 object-cover transition-transform duration-300 hover:scale-105 cursor-pointer"
+                    />
+                  </Link>
                 </motion.div>
                 <motion.div
                   variants={slideIn(index % 2 !== 0 ? "left" : "right")}
@@ -165,6 +177,7 @@ const Home = () => {
               </motion.div>
             ))}
           </div>
+
           <motion.div variants={fadeInUp} className="mt-12 text-center">
             <Button text="Lihat Detail" href="/service" />
           </motion.div>

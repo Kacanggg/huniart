@@ -8,6 +8,7 @@ import Service from "./pages/Service";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import ButtonWhatsapp from "./components/button/ButtonWhatsapp";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   useEffect(() => {
@@ -34,6 +35,7 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTop />
       <Header />
       <div className="flex flex-col min-h-screen overflow-x-hidden">
         <main className="flex-grow">
