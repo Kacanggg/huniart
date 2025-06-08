@@ -7,7 +7,7 @@ import {
   FaMapMarkerAlt,
   FaFacebook,
   FaInstagram,
-  FaLinkedin,
+  FaTiktok,
 } from "react-icons/fa";
 
 const Footer = () => {
@@ -17,7 +17,7 @@ const Footer = () => {
         <div>
           <img src={logo} alt="Logo" className="w-30 h-14 mb-5" />
           <p className="text-footer">
-            Solusi desain interior terbaik untuk kebutuhan Anda. Kami siap
+            Solusi desain arsitek dan interior terbaik untuk kebutuhan Anda. Kami siap
             membantu Anda menciptakan ruang yang indah dan fungsional.
           </p>
         </div>
@@ -71,7 +71,7 @@ const Footer = () => {
           </h3>
           <ul className="text-footer space-y-4">
             <li className="flex items-start space-x-2">
-              <FaMapMarkerAlt className="mt-1 text-footer-alt text-6xl md:text-7xl" />
+              <FaMapMarkerAlt className="mt-1 text-footer-alt text-6xl md:text-5xl" />
               <span>
                 Jl. H. Juhaman No.128, RT.6/RW.8, Lubang Buaya, Kec. Cipayung,
                 Kota Jakarta Timur, DKI Jakarta 13810, Indonesia
@@ -104,12 +104,12 @@ const Footer = () => {
               <FaInstagram className="h-6 w-6" />
             </a>
             <a
-              href="https://www.linkedin.com/in/adi-herlambang-82aa8865?originalSubdomain=id"
+              href="https://www.tiktok.com/@huniart_indonesia"
               target="_blank"
               rel="noopener noreferrer"
               className="text-footer hover:text-heading-alt transition-colors"
             >
-              <FaLinkedin className="h-6 w-6" />
+              <FaTiktok className="h-6 w-6" />
             </a>
           </div>
         </div>

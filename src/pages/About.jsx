@@ -48,7 +48,7 @@ const About = () => {
               <h2 className="text-2xl font-semibold text-[#4e594f]">Visi</h2>
             </div>
             <p>
-              Menjadi penyedia layanan desain interior terpercaya yang
+              Menjadi penyedia layanan desain dan bangun di bidang arsitektur dan interior terpercaya yang
               menghadirkan nilai estetika dan kenyamanan di setiap ruang.
             </p>
           </motion.div>

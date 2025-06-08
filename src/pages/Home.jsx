@@ -1,14 +1,9 @@
 import React, { useRef, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Button from "../components/button/ButtonLink";
-import interiorBg from "../assets/img/Project-Arsitektur-Bekasi-16x9-blended.jpeg";
-import Layanan1 from "../assets/img/Project-Arsitektur-Kelapa-Gading,Jakarta-Utara.jpeg";
+import interiorBg from "../assets/img/Project-Arsitektur-Bekasi,Jawa-Barat.jpeg";
+import Layanan1 from "../assets/img/Project-Interior-Kitchenset,Serpong-Tangerang.JPG";
 import Layanan2 from "../assets/img/Project-Arsitektur-Tebet,Jakarta-Selatan.jpeg";
-// import interiorBg from "../assets/img/Project-Arsitektur-Bekasi-16x9-blended.jpeg";
-// import interiorBg from "../assets/img/Project-Arsitektur-Bekasi-16x9-blended.jpeg";
-// import interiorBg from "../assets/img/Project-Arsitektur-Bekasi-16x9-blended.jpeg";
-// import interiorBg from "../assets/img/Project-Arsitektur-Bekasi-16x9-blended.jpeg";
-// import interiorBg from "../assets/img/Project-Arsitektur-Bekasi-16x9-blended.jpeg";
 import ContactForm from "../components/form/ContactForm";
 import { PortfolioItems } from "../data/PortfolioItems";
 import { FeaturesItems } from "../data/FeaturesItems";
@@ -25,6 +20,7 @@ import {
 } from "../components/animation/Animation";
 import "swiper/css";
 import "swiper/css/navigation";
+import { FaArrowRight } from "react-icons/fa";
 
 const Home = () => {
   const prevRef = useRef(null);
@@ -46,17 +42,17 @@ const Home = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        className="relative h-[360px] sm:h-[480px] md:h-[640px] lg:h-[720px] bg-cover bg-center bg-no-repeat text-white flex items-center justify-center bg-fixed"
-        style={{
-          backgroundImage: `url(${interiorBg})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          transform: `translateY(${scrollY * 0.2}px)`,
-          zIndex: 0,
-        }}
+        className="relative h-[360px] sm:h-[480px] md:h-[640px] lg:h-[720px] text-white flex items-center justify-center overflow-hidden"
+        style={{ transform: `translateY(${scrollY * 0.2}px)` }}
       >
-        <div className="absolute inset-0 bg-opacity-40" />
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat bg-fixed"
+          style={{
+            backgroundImage: `url(${interiorBg})`,
+            filter: "brightness(0.7)",
+            zIndex: 0,
+          }}
+        />
         <motion.div
           initial="hidden"
           animate="visible"
@@ -65,7 +61,7 @@ const Home = () => {
         >
           <motion.h1
             variants={fadeInUp}
-            className="text-2xl md:text-5xl font-extrabold text-heading"
+            className="text-2xl md:text-5xl font-extrabold"
           >
             MEWUJUDKAN INTERIOR IMPIAN ANDA
           </motion.h1>
@@ -74,10 +70,11 @@ const Home = () => {
             gaya.
           </motion.p>
           <motion.div variants={fadeInUp}>
-            <Button text="Hubungi Kami" href="https://wa.me/6282111491259" />
+            <Button text="Hubungi Kami" to="https://wa.me/6282111491259" />
           </motion.div>
         </motion.div>
       </motion.section>
+
       <motion.section
         initial="hidden"
         whileInView="visible"
@@ -132,12 +129,11 @@ const Home = () => {
               Layanan Kami
             </h2>
             <p className="text-navbar">
-              Kami menyediakan layanan desain arsitektur dan interior mulai dari konsultasi
-              hingga eksekusi, memastikan setiap proyek dikerjakan dengan
-              kualitas tinggi dan perhatian pada detail.
+              Kami menyediakan layanan desain arsitektur dan interior mulai dari
+              konsultasi hingga eksekusi, memastikan setiap proyek dikerjakan
+              dengan kualitas tinggi dan perhatian pada detail.
             </p>
           </motion.div>
-
           <div className="space-y-16">
             {ServicesItems.map((service, index) => (
               <motion.div
@@ -154,19 +150,17 @@ const Home = () => {
                   variants={slideIn(index % 2 !== 0 ? "right" : "left")}
                   className="w-full md:w-1/2"
                 >
-                  <Link to="/service">
-                    <img
-                      src={index === 0 ? Layanan1 : Layanan2}
-                      alt={service.title}
-                      className="rounded-2xl shadow-md w-full h-72 object-cover transition-transform duration-300 hover:scale-105 cursor-pointer"
-                    />
-                  </Link>
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="rounded-2xl shadow-md w-full h-72 object-cover transition-transform duration-300 hover:scale-105 cursor-pointer"
+                  />
                 </motion.div>
                 <motion.div
                   variants={slideIn(index % 2 !== 0 ? "left" : "right")}
                   className="w-full md:w-1/2"
                 >
-                  <div className="mb-4 flex justify-center md:justify-start">
+                  <div className="mb-4 flex justify-center md:justify-start bg-icon">
                     {service.icon}
                   </div>
                   <h3 className="text-2xl font-semibold text-heading mb-2">
@@ -177,7 +171,6 @@ const Home = () => {
               </motion.div>
             ))}
           </div>
-
           <motion.div variants={fadeInUp} className="mt-12 text-center">
             <Button text="Lihat Detail" to="/service" />
           </motion.div>
@@ -201,7 +194,8 @@ const Home = () => {
             variants={fadeInUp}
             className="text-center text-footer mb-12 max-w-xl mx-auto"
           >
-            Beberapa proyek desain arsitektur dan interior terbaik yang telah kami selesaikan.
+            Beberapa proyek desain arsitektur dan interior terbaik yang telah
+            kami selesaikan.
           </motion.p>
           <motion.div variants={scaleIn} className="relative">
             <div
@@ -278,7 +272,8 @@ const Home = () => {
         <motion.div variants={fadeInUp} className="text-center mb-10">
           <h2 className="text-3xl font-bold text-heading mb-2">Kontak Kami</h2>
           <p className="text-navbar">
-            Hubungi kami untuk konsultasi atau kerja sama proyek desain arsitektur dan interior Anda.
+            Hubungi kami untuk konsultasi atau kerja sama proyek desain
+            arsitektur dan interior Anda.
           </p>
         </motion.div>
         <div className="grid grid-cols-1 place-items-center">

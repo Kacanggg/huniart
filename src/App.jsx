@@ -5,6 +5,8 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Service from "./pages/Service";
+import DetailInterior from "./components/service/DetailInterior";
+import DetailArsitektur from "./components/service/DetailArsitektur";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import ButtonWhatsapp from "./components/button/ButtonWhatsapp";
@@ -43,6 +45,14 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/service" element={<Service />} />
+            <Route
+              path="/service/desain-interior"
+              element={<DetailInterior />}
+            />
+            <Route
+              path="/service/desain-arsitektur"
+              element={<DetailArsitektur />}
+            />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>

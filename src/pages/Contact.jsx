@@ -1,5 +1,5 @@
 import React from "react";
-import interiorBg from "../assets/img/Project-Arsitektur-Tebet,Jakarta-Selatan.jpeg";
+import interiorBg from "../assets/img/Project-Interior-Office-Fatmawati,Jakarta-Selatan.JPG";
 import ContactForm from "../components/form/ContactForm";
 import { fadeInUp, slideIn } from "../components/animation/Animation";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
@@ -11,9 +11,9 @@ const Contact = () => {
       <motion.img
         src={interiorBg}
         alt="Living room interior"
-        className="w-full object-cover"
+        className="w-auto h-auto object-cover"
         height={400}
-        width={1200}
+        width={200}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
