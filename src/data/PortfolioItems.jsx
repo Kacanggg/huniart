@@ -18,9 +18,6 @@ import interiorBg17 from "../assets/img/Project-Interior-Wardrobe-Bintaro-Jakart
 import interiorBg18 from "../assets/img/Project-Arsitektur-Bekasi,Jawa-Barat.jpeg";
 import interiorBg19 from "../assets/img/Project-Arsitektur-Kelapa-Gading,Jakarta-Utara.jpeg";
 import interiorBg20 from "../assets/img/Project-Arsitektur-Tebet,Jakarta-Selatan.jpeg";
-import interiorBg14 from "../assets/img/Project-Interior-Office-Fatmawati,Jakarta-Selatan.JPG";
-import interiorBg15 from "../assets/img/Project-Interior-Optic-showroom.jpeg";
-import interiorBg16 from "../assets/img/Project-Interior-Wardrobe-Bintaro-Jakarta-Selatan.jpeg";
 
 export const PortfolioItems = [
   {
