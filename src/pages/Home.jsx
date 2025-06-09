@@ -1,11 +1,8 @@
 import React, { useRef, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
 import Button from "../components/button/ButtonLink";
 import interiorBg from "../assets/img/Project-Arsitektur-Bekasi,Jawa-Barat.jpeg";
-import Layanan1 from "../assets/img/Project-Interior-Kitchenset,Serpong-Tangerang.JPG";
-import Layanan2 from "../assets/img/Project-Arsitektur-Tebet,Jakarta-Selatan.jpeg";
 import ContactForm from "../components/form/ContactForm";
-import { PortfolioItems } from "../data/portfolioItems";
+import { PortfolioItems } from "../data/PortfolioItems";
 import { FeaturesItems } from "../data/FeaturesItems";
 import { ServicesItems } from "../data/ServicesItems";
 import { ChevronLeft, ChevronRight } from "lucide-react";
@@ -20,7 +17,6 @@ import {
 } from "../components/animation/Animation";
 import "swiper/css";
 import "swiper/css/navigation";
-import { FaArrowRight } from "react-icons/fa";
 
 const Home = () => {
   const prevRef = useRef(null);

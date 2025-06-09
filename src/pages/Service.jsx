@@ -1,6 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { ServicesItems } from "../data/servicesItems";
+import { ServicesItems } from "../data/ServicesItems";
 import Button from "../components/button/ButtonLink";
 import { fadeInUp } from "../components/animation/Animation";
 import { motion } from "framer-motion";

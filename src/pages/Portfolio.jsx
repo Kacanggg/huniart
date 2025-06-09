@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../components/button/ButtonLink";
-import { PortfolioItems } from "../data/portfolioItems";
+import { PortfolioItems } from "../data/PortfolioItems";
 import { FaFolderOpen, FaArrowRight } from "react-icons/fa";
 import { fadeInUp, staggerContainer } from "../components/animation/Animation";
 import { motion } from "framer-motion";
