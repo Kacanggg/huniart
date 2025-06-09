@@ -27,7 +27,7 @@ const Contact = () => {
         variants={{ visible: { transition: { staggerChildren: 0.2 } } }}
       >
         <motion.h1
-          className="text-4xl md:text-5xl font-serif font-semibold mb-4 text-center"
+          className="text-4xl md:text-5xl font-serif font-semibold mb-4 text-center text-[#5a4b41]"
           variants={fadeInUp}
           custom={0}
         >
@@ -55,9 +55,9 @@ const Contact = () => {
               variants={fadeInUp}
               custom={3}
             >
-              <FaMapMarkerAlt className="text-[#1B2A17] w-6 h-6 mt-1" />
+              <FaMapMarkerAlt className="bg-icon w-6 h-8 mt-1" />
               <div>
-                <h2 className="text-xl font-serif font-semibold mb-1">
+                <h2 className="text-xl font-serif font-semibold text-[#5a4b41] mb-1">
                   Alamat
                 </h2>
                 <p className="text-base leading-relaxed max-w-xs">
@@ -76,9 +76,9 @@ const Contact = () => {
               variants={fadeInUp}
               custom={4}
             >
-              <FaPhone className="text-[#1B2A17] w-6 h-6 mt-1" />
+              <FaPhone className="bg-icon w-6 h-6 mt-1" />
               <div>
-                <h2 className="text-xl font-serif font-semibold mb-1">
+                <h2 className="text-xl font-serif font-semibold text-[#5a4b41] mb-1">
                   Telepon
                 </h2>
                 <p className="text-base leading-relaxed max-w-xs">
@@ -91,9 +91,9 @@ const Contact = () => {
               variants={fadeInUp}
               custom={5}
             >
-              <FaEnvelope className="text-[#1B2A17] w-6 h-6 mt-1" />
+              <FaEnvelope className="bg-icon w-6 h-6 mt-1" />
               <div>
-                <h2 className="text-xl font-serif font-semibold mb-1">Email</h2>
+                <h2 className="text-xl font-serif font-semibold text-[#5a4b41] mb-1">Email</h2>
                 <p className="text-base leading-relaxed max-w-xs">
                   huniart.interior@gmail.com
                 </p>

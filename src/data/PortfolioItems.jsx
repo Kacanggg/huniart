@@ -22,7 +22,7 @@ import interiorBg20 from "../assets/img/Project-Arsitektur-Tebet,Jakarta-Selatan
 export const PortfolioItems = [
   {
     id: 1,
-    title: "Project 001 – Interior Alumunium Kitchenset",
+    title: "Project Interior – Alumunium Kitchenset",
     category: "Kitchen Set",
     image: interiorBg1,
     link: "/portfolio/desain-interior-alumunium-kitchenset",
@@ -31,7 +31,7 @@ export const PortfolioItems = [
   },
   {
     id: 2,
-    title: "Project 002 – Interior Apartement Kitchenset",
+    title: "Project Interior – Apartement Kitchenset",
     category: "Kitchen Set",
     image: interiorBg2,
     link: "/portfolio/desain-interior-apartement-kitchenset",
@@ -40,7 +40,7 @@ export const PortfolioItems = [
   },
   {
     id: 3,
-    title: "Project 003 – Interior Bathroom",
+    title: "Project Interior – Bathroom",
     category: "Kamar Mandi",
     image: interiorBg3,
     link: "/portfolio/desain-interior-bathroom",
@@ -49,7 +49,7 @@ export const PortfolioItems = [
   },
   {
     id: 4,
-    title: "Project 004 – Interior Classic Kitchenset",
+    title: "Project Interior – Classic Kitchenset",
     category: "Kitchen Set",
     image: interiorBg4,
     link: "/portfolio/desain-interior-classic-kitchenset",
@@ -58,7 +58,7 @@ export const PortfolioItems = [
   },
   {
     id: 5,
-    title: "Project 005 – Interior Kamar Anak",
+    title: "Project Interior – Kamar Anak",
     category: "Kamar Tidur",
     image: interiorBg5,
     link: "/portfolio/desain-interior kamar-anak",
@@ -67,7 +67,7 @@ export const PortfolioItems = [
   },
   {
     id: 6,
-    title: "Project 006 – Interior Kitchenset, Jakarta Timur",
+    title: "Project Interior – Kitchenset, Jakarta Timur",
     category: "Kitchen Set",
     image: interiorBg6,
     link: "/portfolio/desain-interior-kitchenset-jakarta-timur",
@@ -76,7 +76,7 @@ export const PortfolioItems = [
   },
   {
     id: 7,
-    title: "Project 007 – Interior Kitchenset, Serpong Tangerang",
+    title: "Project Interior – Kitchenset, Serpong Tangerang",
     category: "Kitchen Set",
     image: interiorBg7,
     link: "/portfolio/desain-interior-kitchenset-serpong-tangerang",
@@ -85,7 +85,7 @@ export const PortfolioItems = [
   },
   {
     id: 8,
-    title: "Project 008 – Interior Kitchenset Alumunium",
+    title: "Project Interior – Kitchenset Alumunium",
     category: "Kitchen Set",
     image: interiorBg8,
     link: "/portfolio/desain-interior-kitchenset-alumunium",
@@ -94,7 +94,7 @@ export const PortfolioItems = [
   },
   {
     id: 9,
-    title: "Project 009 – Interior Kitchenset Apartement",
+    title: "Project Interior – Kitchenset Apartement",
     category: "Kitchen Set",
     image: interiorBg9,
     link: "/portfolio/desain-interior-kitchenset-apartement",
@@ -103,7 +103,7 @@ export const PortfolioItems = [
   },
   {
     id: 10,
-    title: "Project 010 – Interior Livingroom",
+    title: "Project Interior– Livingroom",
     category: "Ruang Tamu",
     image: interiorBg10,
     link: "/portfolio/desain-interior-livingroom",
@@ -112,7 +112,7 @@ export const PortfolioItems = [
   },
   {
     id: 11,
-    title: "Project 011 – Interior Livingroom Apartement",
+    title: "Project Interior – Livingroom Apartement",
     category: "Ruang Tamu",
     image: interiorBg11,
     link: "/portfolio/desain-interior-livingroom-apartement",
@@ -121,7 +121,7 @@ export const PortfolioItems = [
   },
   {
     id: 12,
-    title: "Project 012 – Interior Luxury Livingroom",
+    title: "Project Interior – Luxury Livingroom",
     category: "Ruang Tamu",
     image: interiorBg12,
     link: "/portfolio/desain-interior-luxury-livingroom",
@@ -130,7 +130,7 @@ export const PortfolioItems = [
   },
   {
     id: 13,
-    title: "Project 013 – Interior Office Cityloft, Jakarta Pusat",
+    title: "Project Interior – Office Cityloft, Jakarta Pusat",
     category: "Ruang Kerja",
     image: interiorBg13,
     link: "/portfolio/desain-interior-office-cityloft-jakarta-pusat",
@@ -139,7 +139,7 @@ export const PortfolioItems = [
   },
   {
     id: 14,
-    title: "Project 014 – Interior Kamar Tidur",
+    title: "Project Interior – Kamar Tidur",
     category: "Kamar Tidur",
     image: interiorBg14,
     link: "/portfolio/desain-interior-kamar-tidur",
@@ -148,7 +148,7 @@ export const PortfolioItems = [
   },
   {
     id: 15,
-    title: "Project 015 – Interior Office Fatmawati, Jakarta Selatan",
+    title: "Project Interior – Office Fatmawati, Jakarta Selatan",
     category: "Ruang Kerja",
     image: interiorBg15,
     link: "/portfolio/desain-interior-office-fatmawati-jakarta-selatan",
@@ -157,7 +157,7 @@ export const PortfolioItems = [
   },
   {
     id: 16,
-    title: "Project 016 – Interior Optic Showroom",
+    title: "Project Interior – Optic Showroom",
     category: "Showroom",
     image: interiorBg16,
     link: "/portfolio/desain-interior-optic-showroom",
@@ -166,7 +166,7 @@ export const PortfolioItems = [
   },
   {
     id: 17,
-    title: "Project 017 – Interior Wardrobe Bintaro Jakarta Selatan",
+    title: "Project Interior – Wardrobe Bintaro Jakarta Selatan",
     category: "Walk-in Closet",
     image: interiorBg17,
     link: "/portfolio/desain-interior-wardrobe-bintaro-jakarta-selatan",
@@ -175,7 +175,7 @@ export const PortfolioItems = [
   },
   {
     id: 18,
-    title: "Project 018 – Arsitektur Bekasi Jawa Barat",
+    title: "Project Arsitektur – Bekasi Jawa Barat",
     category: "Arsitektur",
     image: interiorBg18,
     link: "/portfolio/desain-arsitektur-bekasi-jawa-barat",
@@ -184,7 +184,7 @@ export const PortfolioItems = [
   },
   {
     id: 19,
-    title: "Project 019 – Arsitektur Kelapa Gading Jakarta Utara",
+    title: "Project Arsitektur – Kelapa Gading Jakarta Utara",
     category: "Arsitektur",
     image: interiorBg19,
     link: "/portfolio/desain-arsitektur-kelapa-gading-jakarta-utara",
@@ -193,7 +193,7 @@ export const PortfolioItems = [
   },
   {
     id: 20,
-    title: "Project 020 – Arsitektur Tebet Jakarta Selatan",
+    title: "Project Arsitektur – Tebet Jakarta Selatan",
     category: "Arsitektur",
     image: interiorBg20,
     link: "/portfolio/desain-arsitektur-tebet-jakarta-selatan",

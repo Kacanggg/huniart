@@ -1,38 +1,102 @@
 import React from "react";
+import Button from "../button/ButtonLink";
 import { ServicesItems } from "../../data/ServicesItems";
+import { motion } from "framer-motion";
+import { fadeInUp } from "../animation/Animation";
+import gallery1 from "../../assets/img/Project-Interior-Kitchenset,Serpong-Tangerang.JPG";
+import gallery2 from "../../assets/img/Project-Interior-Kitchenset,Serpong-Tangerang.JPG";
+import gallery3 from "../../assets/img/Project-Interior-Kitchenset,Serpong-Tangerang.JPG";
 
 const DetailInterior = () => {
   const interiorItem = ServicesItems.find((item) => item.id === 1);
+  const gallery = [gallery1, gallery2, gallery3];
+
   return (
-    <div className="bg-[#f9f5ef] text-[#3d2c1e] px-6 py-10 md:px-20 md:py-16 font-serif">
-      <h2 className="text-3xl font-semibold mb-4 text-center">
-        Desain Interior
-      </h2>
-      <p className="text-center text-lg mb-8">
-        Kami menyediakan layanan desain interior untuk berbagai jenis properti
-        dengan pendekatan estetika dan fungsional.
-      </p>
-      <div className="grid gap-8 items-center justify-center mb-8">
-        {interiorItem && (
-          <img
-            src={interiorItem.image}
-            alt={interiorItem.title}
-            className="max-w-96 rounded-xl shadow mx-auto"
-          />
-        )}
-      </div>
-      <ul className="list-disc list-inside space-y-3 text-lg max-w-3xl mx-auto">
-        <li>Desain rumah, apartemen, kantor, dan ritel</li>
-        <li>Gambar kerja teknis & visualisasi 3D</li>
-        <li>Tata letak furnitur, skema warna, pencahayaan, dan dekorasi</li>
-        <li>Koordinasi dari konsep hingga instalasi</li>
-        <li>Gratis konsultasi awal dan estimasi biaya</li>
-      </ul>
-      <div className="text-center mt-8">
-        <button className="bg-[#3d2c1e] text-white px-6 py-3 rounded-full hover:bg-[#5a3f2b] transition">
-          Konsultasi Gratis
-        </button>
-      </div>
+    <div className="bg-white text-gray-800">
+      <motion.section
+        className="relative bg-center bg-cover bg-no-repeat h-[400px] md:h-[500px] flex items-center justify-center text-white"
+        style={{ backgroundImage: `url(${interiorItem.image})` }}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={fadeInUp}
+      >
+        <div className="absolute inset-0 bg-black/40"></div>
+        <div className="relative z-10 text-center px-4">
+          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+            Desain Interior Eksklusif
+          </h1>
+          <p className="text-lg md:text-xl text-gray-100 max-w-xl mx-auto">
+            Rancang ruang yang mencerminkan karakter dan kenyamanan Anda.
+          </p>
+        </div>
+      </motion.section>
+      <motion.section
+        className="py-16 container mx-auto px-4"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={fadeInUp}
+        transition={{ delay: 0.2 }}
+      >
+        <h2 className="text-2xl font-semibold text-center mb-10">
+          Layanan yang Kami Tawarkan
+        </h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          {interiorItem?.details?.map((service, idx) => (
+            <motion.div
+              key={idx}
+              className="bg-white rounded-2xl shadow p-6 hover:shadow-md transition"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: idx * 0.1 + 0.3 }}
+            >
+              <div className="text-3xl mb-3">{service.icon}</div>
+              <h3 className="font-semibold text-lg mb-2">{service.title}</h3>
+              <p className="text-sm text-gray-600">{service.desc}</p>
+            </motion.div>
+          ))}
+        </div>
+      </motion.section>
+      <motion.section
+        className="bg-gray-100 py-16"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true }}
+        variants={fadeInUp}
+        transition={{ delay: 0.6 }}
+      >
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="text-2xl font-semibold mb-10">Galeri Proyek</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            {gallery.map((src, idx) => (
+              <motion.img
+                key={idx}
+                src={src}
+                alt={`Galeri ${idx + 1}`}
+                className="rounded-xl shadow-md object-cover h-64 w-full"
+                initial={{ opacity: 0, scale: 0.95 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: idx * 0.15 + 0.7 }}
+              />
+            ))}
+          </div>
+        </div>
+      </motion.section>
+      <motion.section
+        className="py-16 text-center"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ delay: 1.2 }}
+      >
+        <h2 className="text-2xl font-semibold mb-4">
+          Siap memulai desain interior impian Anda?
+        </h2>
+        <Button text="Konsultasi" to="https://wa.me/6282111491259" />
+      </motion.section>
     </div>
   );
 };

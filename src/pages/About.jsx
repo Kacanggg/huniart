@@ -7,7 +7,7 @@ import { FaEye, FaBullseye } from "react-icons/fa";
 const About = () => {
   return (
     <motion.div
-      className="bg-[#fdfaf6] text-[#3a3a3a] px-6 py-12 md:px-20 font-sans"
+      className="bg-white text-[#3a3a3a] px-6 py-12 md:px-20 font-sans"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}

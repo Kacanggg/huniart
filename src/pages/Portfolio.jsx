@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../components/button/ButtonLink";
-import { PortfolioItems } from "../data/PortfolioItems";
+import { PortfolioItems } from "../data/portfolioItems";
 import { FaFolderOpen, FaArrowRight } from "react-icons/fa";
 import { fadeInUp, staggerContainer } from "../components/animation/Animation";
 import { motion } from "framer-motion";
@@ -20,7 +20,7 @@ const Portfolio = () => {
           variants={fadeInUp}
         >
           <FaFolderOpen className="bg-icon text-3xl" />
-          <h2 className="text-4xl font-semibold text-heading">
+          <h2 className="text-4xl font-semibold text-[#5a4b41]">
             Portfolio Kami
           </h2>
         </motion.div>

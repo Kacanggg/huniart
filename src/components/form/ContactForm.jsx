@@ -36,7 +36,7 @@ const ContactForm = () => {
       className="space-y-4 w-full max-w-md"
       onSubmit={sendEmail}
     >
-      <h2 className="text-2xl font-serif font-semibold mb-4">
+      <h2 className="text-2xl font-serif font-semibold text-[#5a4b41] mb-4">
         Formulir Kontak
       </h2>
 
