@@ -1,80 +1,113 @@
-import React from "react";
-import Button from "../components/button/ButtonLink";
-import { PortfolioItems } from "../data/PortfolioItems";
-import { FaFolderOpen, FaArrowRight } from "react-icons/fa";
-import { fadeInUp, staggerContainer } from "../components/animation/Animation";
+import React, { useState, useRef } from "react";
 import { motion } from "framer-motion";
+import Button from "../components/button/ButtonLink";
+import OneLineTitle from "../components/OneLineTitle";
+import { PortfolioItems } from "../data/PortfolioItem";
+import { FaArrowRight, FaFolderOpen } from "react-icons/fa";
+import FilterCategory from "../components/FilterCategory";
+import getFilteredItems from "../components/FilterHelpers";
+import { fadeInUp } from "../components/Animation";
 
 const Portfolio = () => {
-  return (
-    <section className="py-16 px-6 md:px-16 overflow-hidden">
-      <motion.div
-        className="max-w-6xl mx-auto"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={staggerContainer}
-      >
-        <motion.div
-          className="flex items-center gap-3 mb-4"
-          variants={fadeInUp}
-        >
-          <FaFolderOpen className="bg-icon text-3xl" />
-          <h2 className="text-4xl font-semibold text-[#5a4b41]">
-            Portfolio Kami
-          </h2>
-        </motion.div>
+  const [mainCategory, setMainCategory] = useState("");
+  const [category, setCategory] = useState("");
+  const titleRefs = useRef({});
 
-        <motion.p className="text-lg text-heading mb-12" variants={fadeInUp}>
-          Jelajahi proyek-proyek desain arsitektur dan interior unggulan kami
-          yang menggabungkan estetika natural, fungsionalitas, dan kenyamanan
-          dalam setiap ruang. Setiap karya mencerminkan perhatian pada detail
-          dan karakter unik klien kami.
+  const filteredItems = getFilteredItems(
+    PortfolioItems,
+    mainCategory,
+    category
+  );
+
+  const oneLineTitles = OneLineTitle(filteredItems, titleRefs);
+
+  return (
+    <section className="py-16 px-6 md:px-16 overflow-hidden bg-white">
+      <div className="max-w-7xl mx-auto text-center">
+        <motion.h2
+          className="flex justify-center items-center gap-3 text-4xl font-semibold mb-4 text-[#5a4b41]"
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <FaFolderOpen className="bg-icon" /> Portfolio
+        </motion.h2>
+
+        <motion.p
+          className="text-lg mb-12 max-w-3xl mx-auto"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+          viewport={{ once: true }}
+        >
+          Jelajahi proyek desain interior dan arsitektur kami yang mencerminkan
+          perpaduan estetika, fungsionalitas, dan kenyamanan.
         </motion.p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          {PortfolioItems.map((project, index) => (
+        <FilterCategory
+          items={PortfolioItems}
+          mainCategory={mainCategory}
+          setMainCategory={setMainCategory}
+          category={category}
+          setCategory={setCategory}
+        />
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-14 mt-10">
+          {filteredItems.map((item, index) => (
             <motion.div
-              key={project.id}
-              className="bg-white rounded-xl shadow-md overflow-hidden border-l-4 bg-icon"
-              variants={fadeInUp}
+              key={item.link}
+              className="bg-white border border-gray-200 rounded-xl overflow-hidden shadow hover:shadow-md transition"
               custom={index}
+              initial="hidden"
+              whileInView="visible"
+              variants={fadeInUp}
+              viewport={{ once: true }}
             >
               <img
-                src={project.image}
-                alt={project.title}
-                className="w-full h-48 object-cover"
+                src={item.image}
+                alt={item.title}
+                className="w-full h-56 object-cover"
               />
-              <div className="p-6 flex flex-col h-full">
-                <div>
-                  <h3 className="text-xl font-semibold bg-icon mb-2">
-                    {project.title}
-                  </h3>
-                  <p className="text-sm text-heading mb-2">
-                    {project.category}
-                  </p>
-                  <p className="text-heading">{project.description}</p>
-                </div>
+              <div className="p-6">
+                <h3
+                  ref={(el) => (titleRefs.current[item.link] = el)}
+                  className={`text-xl font-semibold text-[#5a4b41] ${
+                    oneLineTitles[item.link] ? "mb-7" : "mb-0"
+                  }`}
+                >
+                  {item.title}
+                </h3>
+                <p className="text-sm text-gray-500 mb-1">
+                  <strong>{item.mainCategory}</strong> – {item.category}
+                </p>
+                <p className="text-heading text-sm line-clamp-3 mb-3">
+                  {item.description}
+                </p>
                 <Button
                   text="Selengkapnya"
-                  to={project.link}
+                  to={item.link}
                   icon={<FaArrowRight />}
+                  iconPosition="right"
+                  className="bg-cta hover:bg-hover-dark"
                 />
               </div>
             </motion.div>
           ))}
         </div>
-      </motion.div>
 
-      <motion.div
-        className="mt-12"
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6, delay: 0.5 }}
-        viewport={{ once: true }}
-      >
-        <Button text="Hubungi Kami" to="https://wa.me/6282111491259" />
-      </motion.div>
+        {filteredItems.length === 0 && (
+          <motion.p
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.3 }}
+            className="text-center text-gray-500 mt-10"
+            viewport={{ once: true }}
+          >
+            Tidak ada proyek ditemukan.
+          </motion.p>
+        )}
+      </div>
     </section>
   );
 };

@@ -1,11 +1,11 @@
 import React from "react";
 import Button from "../button/ButtonLink";
-import { ServicesItems } from "../../data/ServicesItems";
+import { ServicesItems } from "../../data/ServicesItem";
 import { motion } from "framer-motion";
-import { fadeInUp } from "../animation/Animation";
+import { fadeInUp } from "../Animation";
 import gallery1 from "../../assets/img/Project-Arsitektur-Kelapa-Gading,Jakarta-Utara.jpeg";
-import gallery2 from "../../assets/img/Project-Arsitektur-Kelapa-Gading,Jakarta-Utara.jpeg";
-import gallery3 from "../../assets/img/Project-Arsitektur-Kelapa-Gading,Jakarta-Utara.jpeg";
+import gallery2 from "../../assets/img/Project-Arsitektur-Bekasi,Jawa-Barat.jpeg";
+import gallery3 from "../../assets/img/Project-Arsitektur-Tebet,Jakarta-Selatan.jpeg";
 
 const DetailArsitektur = () => {
   const arsitekturItem = ServicesItems.find((item) => item.id === 2);
@@ -95,7 +95,7 @@ const DetailArsitektur = () => {
         <h2 className="text-2xl font-semibold mb-4">
           Siap mewujudkan bangunan impian Anda?
         </h2>
-        <Button text="Konsultasi" to="https://wa.me/6282111491259" />
+        <Button text="Konsultasi" to="https://wa.me/6282111491259" className="bg-cta hover:bg-hover-dark"/>
       </motion.section>
     </div>
   );

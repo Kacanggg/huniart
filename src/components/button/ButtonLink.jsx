@@ -1,14 +1,22 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const ButtonLink = ({ text = "Klik di sini", to = "/", icon }) => {
+const ButtonLink = ({
+  text = "Klik di sini",
+  to = "/",
+  icon,
+  iconPosition = "left",
+  className = "",
+}) => {
   return (
     <div className="flex justify-center mt-8">
       <Link
         to={to}
-        className="inline-flex items-center px-6 py-3 bg-cta hover:bg-hover-dark text-white rounded-lg text-base font-medium transition duration-300"
+        className={`inline-flex items-center gap-2 px-6 py-3 text-white rounded-3xl text-base font-medium transition duration-300 ${className}`}
       >
-        {text}{icon && <span className="ml-2">{icon}</span>}
+        {iconPosition === "left" && icon}
+        <span>{text}</span>
+        {iconPosition === "right" && icon}
       </Link>
     </div>
   );

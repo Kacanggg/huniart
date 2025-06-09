@@ -11,6 +11,7 @@ import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import ButtonWhatsapp from "./components/button/ButtonWhatsapp";
 import ScrollToTop from "./components/ScrollToTop";
+import DetailPortfolio from "./components/portfolio/DetailPortfolio";
 
 function App() {
   useEffect(() => {
@@ -54,6 +55,7 @@ function App() {
               element={<DetailArsitektur />}
             />
             <Route path="/portfolio" element={<Portfolio />} />
+            <Route path="/portfolio/:link" element={<DetailPortfolio />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>

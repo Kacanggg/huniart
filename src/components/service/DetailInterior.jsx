@@ -1,11 +1,11 @@
 import React from "react";
 import Button from "../button/ButtonLink";
-import { ServicesItems } from "../../data/ServicesItems";
+import { ServicesItems } from "../../data/ServicesItem";
 import { motion } from "framer-motion";
-import { fadeInUp } from "../animation/Animation";
-import gallery1 from "../../assets/img/Project-Interior-Kitchenset,Serpong-Tangerang.JPG";
-import gallery2 from "../../assets/img/Project-Interior-Kitchenset,Serpong-Tangerang.JPG";
-import gallery3 from "../../assets/img/Project-Interior-Kitchenset,Serpong-Tangerang.JPG";
+import { fadeInUp } from "../Animation";
+import gallery1 from "../../assets/img/Project-Interior-Alumunium-Kitchenset.JPG";
+import gallery2 from "../../assets/img/Project-Interior-Alumunium-Kitchenset-2.jpeg";
+import gallery3 from "../../assets/img/Project-Interior-Alumunium-Kitchenset-3.jpeg";
 
 const DetailInterior = () => {
   const interiorItem = ServicesItems.find((item) => item.id === 1);
@@ -95,7 +95,11 @@ const DetailInterior = () => {
         <h2 className="text-2xl font-semibold mb-4">
           Siap memulai desain interior impian Anda?
         </h2>
-        <Button text="Konsultasi" to="https://wa.me/6282111491259" />
+        <Button
+          text="Konsultasi"
+          to="https://wa.me/6282111491259"
+          className="bg-cta hover:bg-hover-dark"
+        />
       </motion.section>
     </div>
   );

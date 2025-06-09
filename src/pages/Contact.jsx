@@ -1,7 +1,7 @@
 import React from "react";
 import interiorBg from "../assets/img/Project-Interior-Office-Fatmawati,Jakarta-Selatan.JPG";
-import ContactForm from "../components/form/ContactForm";
-import { fadeInUp, slideIn } from "../components/animation/Animation";
+import ContactForm from "../components/ContactForm";
+import { fadeInUp, slideIn } from "../components/Animation";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { motion } from "framer-motion";
 

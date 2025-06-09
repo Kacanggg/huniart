@@ -39,6 +39,9 @@ button {
 .bg-cta {
   background-color: #c9a76a;
 }
+.bg-dark {
+  background-color: #708d81;
+}
 .text-cta {
   color: #ffffff;
 }
@@ -53,4 +56,7 @@ button {
 }
 .hover\:bg-hover-dark:hover {
   background-color: #708d81;
+}
+.hover\:bg-hover-cta:hover {
+  background-color: #c9a76a;
 }

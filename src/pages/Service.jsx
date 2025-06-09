@@ -1,7 +1,7 @@
 import React from "react";
-import { ServicesItems } from "../data/ServicesItems";
+import { ServicesItems } from "../data/ServicesItem";
 import Button from "../components/button/ButtonLink";
-import { fadeInUp } from "../components/animation/Animation";
+import { fadeInUp } from "../components/Animation";
 import { motion } from "framer-motion";
 import { FaTools, FaArrowRight } from "react-icons/fa";
 
@@ -58,6 +58,8 @@ const Services = () => {
                   text="Selengkapnya"
                   to={service.link}
                   icon={<FaArrowRight />}
+                  iconPosition="right"
+                  className="bg-cta hover:bg-hover-dark"
                 />
               </div>
             </motion.div>

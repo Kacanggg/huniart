@@ -1,10 +1,10 @@
 import React, { useRef, useEffect, useState } from "react";
 import Button from "../components/button/ButtonLink";
 import interiorBg from "../assets/img/Project-Arsitektur-Bekasi,Jawa-Barat.jpeg";
-import ContactForm from "../components/form/ContactForm";
-import { PortfolioItems } from "../data/PortfolioItems";
-import { FeaturesItems } from "../data/FeaturesItems";
-import { ServicesItems } from "../data/ServicesItems";
+import ContactForm from "../components/ContactForm";
+import { PortfolioItems } from "../data/PortfolioItem";
+import { FeaturesItems } from "../data/FeaturesItem";
+import { ServicesItems } from "../data/ServicesItem";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
@@ -14,7 +14,7 @@ import {
   slideIn,
   staggerContainer,
   scaleIn,
-} from "../components/animation/Animation";
+} from "../components/Animation";
 import "swiper/css";
 import "swiper/css/navigation";
 
@@ -66,7 +66,7 @@ const Home = () => {
             gaya.
           </motion.p>
           <motion.div variants={fadeInUp}>
-            <Button text="Hubungi Kami" to="https://wa.me/6282111491259" />
+            <Button text="Hubungi Kami" to="https://wa.me/6282111491259" className="bg-cta hover:bg-hover-dark" />
           </motion.div>
         </motion.div>
       </motion.section>
@@ -168,7 +168,7 @@ const Home = () => {
             ))}
           </div>
           <motion.div variants={fadeInUp} className="mt-12 text-center">
-            <Button text="Lihat Detail" to="/service" />
+            <Button text="Lihat Detail" to="/service" className="bg-cta hover:bg-hover-dark" />
           </motion.div>
         </div>
       </motion.section>
@@ -246,7 +246,7 @@ const Home = () => {
                       <h3 className="text-lg font-semibold text-heading mb-2">
                         {item.title}
                       </h3>
-                      <p className="text-sm text-navbar">{item.description}</p>
+                      <p className="text-sm text-navbar line-clamp-1">{item.description}</p>
                     </div>
                   </motion.div>
                 </SwiperSlide>
@@ -254,7 +254,7 @@ const Home = () => {
             </Swiper>
           </motion.div>
           <motion.div variants={fadeInUp} className="text-center mt-8">
-            <Button text="Lihat Portfolio" to="/portfolio" />
+            <Button text="Lihat Portfolio" to="/portfolio" className="bg-cta hover:bg-hover-dark" />
           </motion.div>
         </div>
       </motion.section>
