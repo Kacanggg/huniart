@@ -23,6 +23,6 @@ export const FeaturesItems = [
     icon: <FaUserTie className="text-4xl bg-icon" />,
     title: "Layanan Konsultasi Gratis",
     description:
-      "Tim kami siap membantu merencanakan desain interior Anda tanpa biaya. Kami memberikan saran terbaik dan solusi kreatif untuk mewujudkan ruang impian Anda, sesuai dengan anggaran dan kebutuhan.",
+      "Tim kami siap membantu merencanakan desain arsitektur dan interior Anda tanpa biaya. Kami memberikan saran terbaik dan solusi kreatif untuk mewujudkan ruang impian Anda, sesuai dengan anggaran dan kebutuhan.",
   },
 ];
