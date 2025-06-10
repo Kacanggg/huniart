@@ -30,11 +30,21 @@ import interiorBg29 from "../assets/img/Project-Interior-Luxury-Livingroom.JPG";
 import interiorBg30 from "../assets/img/Project-Interior-Office-Cityloft,Jakarta-Pusat.JPG";
 import interiorBg31 from "../assets/img/Project-Interior-Office-Fatmawati,Jakarta-Selatan.JPG";
 import interiorBg32 from "../assets/img/Project-Interior-Optic-showroom.jpeg";
-import interiorBg33 from "../assets/img/Project-Interior-Wardrobe-Bintaro-Jakarta-Selatan.jpeg";
+import interiorBg33 from "../assets/img/Project-Interior-Optic-showroom-2.jpeg";
+import interiorBg34 from "../assets/img/Project-Interior-Optic-showroom-3.jpeg";
+import interiorBg35 from "../assets/img/Project-Interior-Optic-showroom-4.jpeg";
+import interiorBg36 from "../assets/img/Project-Interior-Optic-showroom-5.jpeg";
+import interiorBg37 from "../assets/img/Project-Interior-Optic-showroom-6.jpeg";
+import interiorBg38 from "../assets/img/Project-Interior-Wardrobe-Bintaro-Jakarta-Selatan.jpeg";
 
 import arsitekturBg1 from "../assets/img/Project-Arsitektur-Bekasi,Jawa-Barat.jpeg";
-import arsitekturBg2 from "../assets/img/Project-Arsitektur-Kelapa-Gading,Jakarta-Utara.jpeg";
-import arsitekturBg3 from "../assets/img/Project-Arsitektur-Tebet,Jakarta-Selatan.jpeg";
+import arsitekturBg2 from "../assets/img/Project-Arsitektur-Bekasi,Jawa-Barat-2.jpeg";
+import arsitekturBg3 from "../assets/img/Project-Arsitektur-Bekasi,Jawa-Barat-3.jpeg";
+import arsitekturBg4 from "../assets/img/Project-Arsitektur-Bekasi,Jawa-Barat-4.jpeg";
+import arsitekturBg5 from "../assets/img/Project-Arsitektur-Bekasi,Jawa-Barat-5.jpeg";
+import arsitekturBg6 from "../assets/img/Project-Arsitektur-Bekasi,Jawa-Barat-6.jpeg";
+import arsitekturBg7 from "../assets/img/Project-Arsitektur-Kelapa-Gading,Jakarta-Utara.jpeg";
+import arsitekturBg8 from "../assets/img/Project-Arsitektur-Tebet,Jakarta-Selatan.jpeg";
 
 import interiorVideo1 from "../assets/img/Project-Interior-Apartement-Kitchenset-Video.mp4";
 import interiorVideo2 from "../assets/img/Project-Interior-Kamar-Tidur-Video.mp4";
@@ -204,7 +214,7 @@ export const PortfolioItems = [
     mainCategory: "Interior",
     category: "Showroom",
     image: interiorBg32,
-    images: [interiorBg32],
+    images: [interiorBg32, interiorBg33, interiorBg34, interiorBg35, interiorBg36, interiorBg37],
     link: "desain-interior-optic-showroom",
     description:
       "Desain showroom optik dengan konsep retail modern, display yang optimal untuk produk eyewear, pencahayaan yang tepat dan customer experience yang premium.",
@@ -214,8 +224,8 @@ export const PortfolioItems = [
     title: "Project Interior – Wardrobe Bintaro Jakarta Selatan",
     mainCategory: "Interior",
     category: "Walk-in Closet",
-    image: interiorBg33,
-    images: [interiorBg33],
+    image: interiorBg38,
+    images: [interiorBg38],
     link: "desain-interior-wardrobe-bintaro-jakarta-selatan",
     description:
       "Walk-in closet mewah dengan sistem storage yang comprehensive, material kayu premium dan pencahayaan LED yang elegan untuk display fashion optimal.",
@@ -226,7 +236,7 @@ export const PortfolioItems = [
     mainCategory: "Arsitektur",
     category: "Arsitektur",
     image: arsitekturBg1,
-    images: [arsitekturBg1],
+    images: [arsitekturBg1, arsitekturBg2, arsitekturBg3, arsitekturBg4, arsitekturBg5, arsitekturBg6],
     link: "desain-arsitektur-bekasi-jawa-barat",
     description:
       "Proyek arsitektur residential dengan desain contemporary tropical, mengoptimalkan pencahayaan alami dan ventilasi untuk kenyamanan penghuni.",
@@ -236,8 +246,8 @@ export const PortfolioItems = [
     title: "Project Arsitektur – Kelapa Gading Jakarta Utara",
     mainCategory: "Arsitektur",
     category: "Arsitektur",
-    image: arsitekturBg2,
-    images: [arsitekturBg2],
+    image: arsitekturBg7,
+    images: [arsitekturBg7],
     link: "desain-arsitektur-kelapa-gading-jakarta-utara",
     description:
       "Desain arsitektur modern dengan konsep sustainable living, integrasi teknologi smart home dan material eco-friendly.",
@@ -247,8 +257,8 @@ export const PortfolioItems = [
     title: "Project Arsitektur – Tebet Jakarta Selatan",
     mainCategory: "Arsitektur",
     category: "Arsitektur",
-    image: arsitekturBg3,
-    images: [arsitekturBg3],
+    image: arsitekturBg8,
+    images: [arsitekturBg8],
     link: "desain-arsitektur-tebet-jakarta-selatan",
     description:
       "Proyek arsitektur dengan pendekatan urban contemporary, mengoptimalkan lahan terbatas dengan desain vertikal yang fungsional dan estetis.",
