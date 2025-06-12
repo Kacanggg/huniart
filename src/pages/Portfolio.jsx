@@ -1,7 +1,6 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import Button from "../components/button/ButtonLink";
-import OneLineTitle from "../components/OneLineTitle";
 import { PortfolioItems } from "../data/PortfolioItem";
 import { FaArrowRight, FaFolderOpen } from "react-icons/fa";
 import FilterCategory from "../components/FilterCategory";
@@ -11,15 +10,12 @@ import { fadeInUp } from "../components/Animation";
 const Portfolio = () => {
   const [mainCategory, setMainCategory] = useState("");
   const [category, setCategory] = useState("");
-  const titleRefs = useRef({});
 
   const filteredItems = getFilteredItems(
     PortfolioItems,
     mainCategory,
     category
   );
-
-  const oneLineTitles = OneLineTitle(filteredItems, titleRefs);
 
   return (
     <section className="py-16 px-6 md:px-16 overflow-hidden bg-white">
@@ -70,16 +66,11 @@ const Portfolio = () => {
                 className="w-full h-56 object-cover"
               />
               <div className="p-6">
-                <h3
-                  ref={(el) => (titleRefs.current[item.link] = el)}
-                  className={`text-xl font-semibold text-[#5a4b41] ${
-                    oneLineTitles[item.link] ? "mb-7" : "mb-0"
-                  }`}
-                >
+                <h3 className="text-xl font-semibold text-[#5a4b41]">
                   {item.title}
                 </h3>
                 <p className="text-sm text-gray-500 mb-1">
-                  <strong>{item.mainCategory}</strong> – {item.category}
+                  <strong>{item.category}</strong>
                 </p>
                 <p className="text-heading text-sm line-clamp-3 mb-3">
                   {item.description}

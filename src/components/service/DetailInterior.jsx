@@ -3,9 +3,9 @@ import Button from "../button/ButtonLink";
 import { ServicesItems } from "../../data/ServicesItem";
 import { motion } from "framer-motion";
 import { fadeInUp } from "../Animation";
-import gallery1 from "../../assets/img/Project-Interior-Alumunium-Kitchenset.JPG";
-import gallery2 from "../../assets/img/Project-Interior-Alumunium-Kitchenset-2.jpeg";
-import gallery3 from "../../assets/img/Project-Interior-Alumunium-Kitchenset-3.jpeg";
+import gallery1 from "../../assets/img/Project-Interior-Apartement.jpeg";
+import gallery2 from "../../assets/img/Project-Interior-Apartement-2.jpeg";
+import gallery3 from "../../assets/img/Project-Interior-Apartement-3.jpeg";
 
 const DetailInterior = () => {
   const interiorItem = ServicesItems.find((item) => item.id === 1);

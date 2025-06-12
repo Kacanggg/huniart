@@ -3,9 +3,9 @@ import Button from "../button/ButtonLink";
 import { ServicesItems } from "../../data/ServicesItem";
 import { motion } from "framer-motion";
 import { fadeInUp } from "../Animation";
-import gallery1 from "../../assets/img/Project-Arsitektur-Kelapa-Gading,Jakarta-Utara.jpeg";
-import gallery2 from "../../assets/img/Project-Arsitektur-Bekasi,Jawa-Barat.jpeg";
-import gallery3 from "../../assets/img/Project-Arsitektur-Tebet,Jakarta-Selatan.jpeg";
+import gallery1 from "../../assets/img/Project-Interior-Arsitektur.jpeg";
+import gallery2 from "../../assets/img/Project-Interior-Arsitektur-2.jpeg";
+import gallery3 from "../../assets/img/Project-Interior-Arsitektur-3.jpeg";
 
 const DetailArsitektur = () => {
   const arsitekturItem = ServicesItems.find((item) => item.id === 2);

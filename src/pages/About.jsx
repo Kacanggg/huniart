@@ -1,5 +1,5 @@
 import React from "react";
-import interiorBg from "../assets/img/Project-Arsitektur-Kelapa-Gading,Jakarta-Utara.jpeg";
+import interiorBg from "../assets/img/Project-Interior-Arsitektur-6.jpeg";
 import { fadeInUp } from "../components/Animation";
 import { motion } from "framer-motion";
 import { FaEye, FaBullseye } from "react-icons/fa";

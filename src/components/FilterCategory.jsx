@@ -1,5 +1,4 @@
 import React from "react";
-import getFilteredItems from "./FilterHelpers";
 import { motion } from "framer-motion";
 import { buttonVariants } from "./Animation";
 
