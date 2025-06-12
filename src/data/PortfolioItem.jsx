@@ -154,7 +154,7 @@ export const PortfolioItems = [
   {
     id: 5,
     title: "Project Interior - Arsitektur",
-    mainCategory: "Interior",
+    mainCategory: "Arsitektur",
     category: "Arsitektur",
     image: interiorBg45,
     images: [
