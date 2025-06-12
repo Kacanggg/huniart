@@ -77,7 +77,7 @@ export const PortfolioItems = [
     ],
     link: "project-interior-apartement",
     description:
-      "Tampilan modern minimalis dengan material tahan lama. Kitchenset ini menggunakan kombinasi aluminium dan ACP yang antikarat dan bebas rayap — solusi cerdas untuk dapur yang rapi dan awet.",
+      "Kami merancang interior apartemen yang tidak hanya indah dipandang, tetapi juga cerdas dalam fungsi. Setiap elemen ditata dengan presisi untuk memaksimalkan ruang, menghadirkan kenyamanan optimal, serta nuansa kemewahan yang elegan. Solusi ideal bagi Anda yang mengutamakan kualitas hidup tanpa kompromi.",
   },
   {
     id: 2,
