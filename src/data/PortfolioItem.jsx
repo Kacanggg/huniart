@@ -42,17 +42,18 @@ import interiorBg41 from "../assets/img/Project-Interior-Tempat-Usaha-6.jpeg";
 import interiorBg42 from "../assets/img/Project-Interior-Tempat-Usaha-7.jpeg";
 import interiorBg43 from "../assets/img/Project-Interior-Tempat-Usaha-8.jpeg";
 import interiorBg44 from "../assets/img/Project-Interior-Tempat-Usaha-9.jpeg";
-import interiorBg45 from "../assets/img/Project-Interior-Arsitektur.jpeg";
-import interiorBg46 from "../assets/img/Project-Interior-Arsitektur-2.jpeg";
-import interiorBg47 from "../assets/img/Project-Interior-Arsitektur-3.jpeg";
-import interiorBg48 from "../assets/img/Project-Interior-Arsitektur-4.jpeg";
-import interiorBg49 from "../assets/img/Project-Interior-Arsitektur-5.jpeg";
-import interiorBg50 from "../assets/img/Project-Interior-Arsitektur-6.jpeg";
-import interiorBg51 from "../assets/img/Project-Interior-Arsitektur-7.jpeg";
-import interiorBg52 from "../assets/img/Project-Interior-Arsitektur-8.jpeg";
-import interiorBg53 from "../assets/img/Project-Interior-Arsitektur-9.jpeg";
-import interiorBg54 from "../assets/img/Project-Interior-Arsitektur-10.jpeg";
-import interiorBg55 from "../assets/img/Project-Interior-Arsitektur-11.jpeg";
+
+import arsitekturBg1 from "../assets/img/Project-Interior-Arsitektur.jpeg";
+import arsitekturBg2 from "../assets/img/Project-Interior-Arsitektur-2.jpeg";
+import arsitekturBg3 from "../assets/img/Project-Interior-Arsitektur-3.jpeg";
+import arsitekturBg4 from "../assets/img/Project-Interior-Arsitektur-4.jpeg";
+import arsitekturBg5 from "../assets/img/Project-Interior-Arsitektur-5.jpeg";
+import arsitekturBg6 from "../assets/img/Project-Interior-Arsitektur-6.jpeg";
+import arsitekturBg7 from "../assets/img/Project-Interior-Arsitektur-7.jpeg";
+import arsitekturBg8 from "../assets/img/Project-Interior-Arsitektur-8.jpeg";
+import arsitekturBg9 from "../assets/img/Project-Interior-Arsitektur-9.jpeg";
+import arsitekturBg10 from "../assets/img/Project-Interior-Arsitektur-10.jpeg";
+import arsitekturBg11 from "../assets/img/Project-Interior-Arsitektur-11.jpeg";
 
 import interiorVideo1 from "../assets/img/Project-Interior-Rumah-Tinggal-Video.mp4";
 import interiorVideo2 from "../assets/img/Project-Interior-Rumah-Tinggal-Video-2.mp4";
@@ -109,7 +110,7 @@ export const PortfolioItems = [
     videos: [interiorVideo1, interiorVideo2],
     link: "project-interior-rumah-tinggal",
     description:
-      "Kitchen set compact nan fungsional untuk ruang terbatas. Finishing abu doff dengan aksen kayu dan pencahayaan tersembunyi menghadirkan sentuhan mewah dan modern. Desain yang optimal untuk gaya hidup praktis di apartemen urban.",
+      "Rumah bukan sekadar tempat pulang, tapi ruang hangat untuk tumbuh dan berbagi cerita. Kami merancang interior yang menyatu antara modernitas, fungsionalitas, estetika, dan kenyamanan — menciptakan nuansa mewah tanpa kehilangan kehangatan. Karena momen terbaik dimulai dari rumah yang dirancang dengan cinta.",
   },
   {
     id: 3,
@@ -128,7 +129,7 @@ export const PortfolioItems = [
     ],
     link: "project-interior-kantor",
     description:
-      "Kamar mandi bukan sekadar fungsi, tapi juga estetika. Desain modern minimalis dengan pencahayaan ambient yang memberi nuansa tenang dan mewah.",
+      "Saat estetika bertemu kenyamanan, hadirlah ruang kantor yang tidak hanya enak dipandang, tapi juga bikin betah bekerja. Desain modern yang tertata rapi memicu ide-ide kreatif mengalir deras, vibes positif tersebar di setiap sudut, dan kenyamanan jadi kunci produktivitas.",
   },
   {
     id: 4,
@@ -149,29 +150,29 @@ export const PortfolioItems = [
     ],
     link: "project-interior-tempat-usaha",
     description:
-      "Kamar tidur bukan hanya tempat beristirahat—ia adalah ruang pribadi yang layak dirancang dengan detail, kualitas, dan estetika tinggi. Desain elegan yang dipadukan dengan material premium, storage tersembunyi yang fungsional, dan komposisi warna yang memberi kesan tenang namun berkelas.",
+      "Interior bukan sekadar tampilan — tapi juga pengalaman. Desain interior yang nyaman, estetis, dan fungsional bisa membuat pelanggan betah berlama-lama. Mulai dari pencahayaan yang hangat, pemilihan warna yang tepat, hingga layout yang mengalir — semua dirancang untuk menciptakan suasana menyenangkan yang bikin mereka ingin kembali lagi.",
   },
   {
     id: 5,
-    title: "Project Interior - Arsitektur",
+    title: "Project Arsitektur",
     mainCategory: "Arsitektur",
     category: "Arsitektur",
-    image: interiorBg45,
+    image: arsitekturBg1,
     images: [
-      interiorBg45,
-      interiorBg46,
-      interiorBg47,
-      interiorBg48,
-      interiorBg49,
-      interiorBg50,
-      interiorBg51,
-      interiorBg52,
-      interiorBg53,
-      interiorBg54,
-      interiorBg55,
+      arsitekturBg1,
+      arsitekturBg2,
+      arsitekturBg3,
+      arsitekturBg4,
+      arsitekturBg5,
+      arsitekturBg6,
+      arsitekturBg7,
+      arsitekturBg8,
+      arsitekturBg9,
+      arsitekturBg10,
+      arsitekturBg11,
     ],
-    link: "project-interior-arsitektur",
+    link: "project-arsitektur",
     description:
-      "Kitchen set dengan gaya klasik elegan, memadukan material kayu premium dengan desain timeless yang menciptakan kehangatan dalam ruang dapur.",
+      "Kami menghadirkan karya arsitektur yang dirancang dengan detail dan dibangun oleh tim kontraktor berpengalaman. Setiap proyek kami wujudkan dengan standar profesional demi hasil terbaik—fungsional, estetis, dan tahan lama. Dari konsep hingga bangun, kami hadir untuk mewujudkan hunian impian Anda.",
   },
 ];
