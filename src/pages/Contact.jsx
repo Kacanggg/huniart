@@ -40,8 +40,9 @@ const Contact = () => {
           custom={1}
         >
           Kami senang mendengar dari Anda. Jika Anda memiliki pertanyaan, ingin
-          berkonsultasi mengenai proyek desain arsitektur dan interior Anda, atau membutuhkan
-          informasi lebih lanjut, jangan ragu untuk menghubungi kami.
+          berkonsultasi mengenai proyek desain arsitektur dan interior Anda,
+          atau membutuhkan informasi lebih lanjut, jangan ragu untuk menghubungi
+          kami.
         </motion.p>
 
         <motion.div
@@ -93,7 +94,9 @@ const Contact = () => {
             >
               <FaEnvelope className="bg-icon w-6 h-6 mt-1" />
               <div>
-                <h2 className="text-xl font-serif font-semibold text-[#5a4b41] mb-1">Email</h2>
+                <h2 className="text-xl font-serif font-semibold text-[#5a4b41] mb-1">
+                  Email
+                </h2>
                 <p className="text-base leading-relaxed max-w-xs">
                   huniart.interior@gmail.com
                 </p>

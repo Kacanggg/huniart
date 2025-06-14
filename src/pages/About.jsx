@@ -32,10 +32,10 @@ const About = () => {
           variants={fadeInUp}
           custom={1}
         >
-          Kami adalah perusahaan desain arsitektur dan interior yang menghadirkan solusi
-          kreatif untuk menciptakan ruang yang fungsional, estetis, dan nyaman.
-          Dengan pendekatan personal, kami melayani klien dari berbagai sektor,
-          mulai dari rumah tinggal hingga ruang komersial.
+          Kami adalah perusahaan desain arsitektur dan interior yang
+          menghadirkan solusi kreatif untuk menciptakan ruang yang fungsional,
+          estetis, dan nyaman. Dengan pendekatan personal, kami melayani klien
+          dari berbagai sektor, mulai dari rumah tinggal hingga ruang komersial.
         </motion.p>
         <motion.div
           className="grid md:grid-cols-2 gap-8 mb-12"
@@ -48,8 +48,9 @@ const About = () => {
               <h2 className="text-2xl font-semibold text-[#4e594f]">Visi</h2>
             </div>
             <p>
-              Menjadi penyedia layanan desain dan bangun di bidang arsitektur dan interior terpercaya yang
-              menghadirkan nilai estetika dan kenyamanan di setiap ruang.
+              Menjadi penyedia layanan desain dan bangun di bidang arsitektur
+              dan interior terpercaya yang menghadirkan nilai estetika dan
+              kenyamanan di setiap ruang.
             </p>
           </motion.div>
           <motion.div variants={fadeInUp} custom={4}>

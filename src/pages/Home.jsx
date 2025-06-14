@@ -59,14 +59,18 @@ const Home = () => {
             variants={fadeInUp}
             className="text-2xl md:text-5xl font-extrabold"
           >
-            MEWUJUDKAN INTERIOR IMPIAN ANDA
+            MEWUJUDKAN ARSITEKTUR DAN INTERIOR IMPIAN ANDA
           </motion.h1>
           <motion.p variants={fadeInUp} className="text-sm md:text-lg -mb-6">
             Kami hadir untuk mendesain ruang yang nyaman, fungsional, dan penuh
             gaya.
           </motion.p>
           <motion.div variants={fadeInUp}>
-            <Button text="Hubungi Kami" to="https://wa.me/6282111491259" className="bg-cta hover:bg-hover-dark" />
+            <Button
+              text="Hubungi Kami"
+              to="https://wa.me/6282111491259"
+              className="bg-cta hover:bg-hover-dark"
+            />
           </motion.div>
         </motion.div>
       </motion.section>
@@ -168,7 +172,11 @@ const Home = () => {
             ))}
           </div>
           <motion.div variants={fadeInUp} className="mt-12 text-center">
-            <Button text="Lihat Detail" to="/service" className="bg-cta hover:bg-hover-dark" />
+            <Button
+              text="Lihat Detail"
+              to="/service"
+              className="bg-cta hover:bg-hover-dark"
+            />
           </motion.div>
         </div>
       </motion.section>
@@ -246,7 +254,9 @@ const Home = () => {
                       <h3 className="text-lg font-semibold text-heading mb-2">
                         {item.title}
                       </h3>
-                      <p className="text-sm text-navbar line-clamp-1">{item.description}</p>
+                      <p className="text-sm text-navbar line-clamp-1">
+                        {item.description}
+                      </p>
                     </div>
                   </motion.div>
                 </SwiperSlide>
@@ -254,7 +264,11 @@ const Home = () => {
             </Swiper>
           </motion.div>
           <motion.div variants={fadeInUp} className="text-center mt-8">
-            <Button text="Lihat Portfolio" to="/portfolio" className="bg-cta hover:bg-hover-dark" />
+            <Button
+              text="Lihat Portfolio"
+              to="/portfolio"
+              className="bg-cta hover:bg-hover-dark"
+            />
           </motion.div>
         </div>
       </motion.section>
