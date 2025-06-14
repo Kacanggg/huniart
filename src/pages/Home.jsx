@@ -59,7 +59,7 @@ const Home = () => {
             variants={fadeInUp}
             className="text-2xl md:text-5xl font-extrabold"
           >
-            MEWUJUDKAN INTERIOR IMPIAN ANDA
+            MEWUJUDKAN ARSITEKTUR DAN INTERIOR IMPIAN ANDA
           </motion.h1>
           <motion.p variants={fadeInUp} className="text-sm md:text-lg -mb-6">
             Kami hadir untuk mendesain ruang yang nyaman, fungsional, dan penuh
