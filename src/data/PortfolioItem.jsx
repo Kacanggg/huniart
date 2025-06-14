@@ -175,7 +175,10 @@ export const PortfolioItems = [
       arsitekturBg9,
       arsitekturBg10,
       arsitekturBg11,
+<<<<<<< HEAD
       arsitekturBg12,
+=======
+>>>>>>> fd09ab3c10091ec4f076effcb2bd2910e0d96a32
     ],
     link: "project-arsitektur",
     description:
