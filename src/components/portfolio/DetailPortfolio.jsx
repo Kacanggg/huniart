@@ -65,7 +65,7 @@ const DetailPortfolio = () => {
             />
             <button
               onClick={() => setActiveImage(null)}
-              className="absolute top-5 right-5 text-white text-3xl font-bold"
+              className="absolute top-5 right-5 text-black text-3xl font-bold z-50"
               aria-label="Close"
             >
               &times;
