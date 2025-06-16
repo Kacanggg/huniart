@@ -1,5 +1,5 @@
 import React from "react";
-import interiorBg from "../assets/img/Project-Interior-Kantor-6.jpeg";
+import interiorBg from "../assets/img/Project-Interior-Kantor-3.jpeg";
 import ContactForm from "../components/ContactForm";
 import { fadeInUp, slideIn } from "../components/Animation";
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";

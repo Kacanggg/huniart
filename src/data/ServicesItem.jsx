@@ -10,8 +10,8 @@ import {
   FaHardHat,
   FaRegCheckCircle,
 } from "react-icons/fa";
-import interior from "../assets/img/Project-Interior-Rumah-Tinggal-12.jpeg";
-import arsitektur from "../assets/img/Project-Interior-Arsitektur-8.jpeg";
+import interior from "../assets/img/Project-Interior-Rumah-Tinggal-10.jpeg";
+import arsitektur from "../assets/img/Project-Interior-Arsitektur-50.jpeg";
 
 export const ServicesItems = [
   {

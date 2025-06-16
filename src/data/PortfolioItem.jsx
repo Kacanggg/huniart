@@ -74,6 +74,24 @@ import arsitekturBg9 from "../assets/img/Project-Interior-Arsitektur-9.jpeg";
 import arsitekturBg10 from "../assets/img/Project-Interior-Arsitektur-10.jpeg";
 import arsitekturBg11 from "../assets/img/Project-Interior-Arsitektur-11.jpeg";
 import arsitekturBg12 from "../assets/img/Project-Interior-Arsitektur-12.jpeg";
+import arsitekturBg13 from "../assets/img/Project-Interior-Arsitektur-13.jpeg";
+import arsitekturBg14 from "../assets/img/Project-Interior-Arsitektur-14.jpeg";
+import arsitekturBg15 from "../assets/img/Project-Interior-Arsitektur-15.jpeg";
+import arsitekturBg16 from "../assets/img/Project-Interior-Arsitektur-16.jpeg";
+import arsitekturBg17 from "../assets/img/Project-Interior-Arsitektur-17.jpeg";
+import arsitekturBg18 from "../assets/img/Project-Interior-Arsitektur-18.jpeg";
+import arsitekturBg19 from "../assets/img/Project-Interior-Arsitektur-19.jpeg";
+import arsitekturBg20 from "../assets/img/Project-Interior-Arsitektur-20.jpeg";
+import arsitekturBg21 from "../assets/img/Project-Interior-Arsitektur-21.jpeg";
+import arsitekturBg22 from "../assets/img/Project-Interior-Arsitektur-22.jpeg";
+import arsitekturBg23 from "../assets/img/Project-Interior-Arsitektur-23.jpeg";
+import arsitekturBg24 from "../assets/img/Project-Interior-Arsitektur-24.jpeg";
+import arsitekturBg25 from "../assets/img/Project-Interior-Arsitektur-25.jpeg";
+import arsitekturBg26 from "../assets/img/Project-Interior-Arsitektur-26.jpeg";
+import arsitekturBg27 from "../assets/img/Project-Interior-Arsitektur-27.jpeg";
+import arsitekturBg28 from "../assets/img/Project-Interior-Arsitektur-28.jpeg";
+import arsitekturBg29 from "../assets/img/Project-Interior-Arsitektur-29.jpeg";
+import arsitekturBg30 from "../assets/img/Project-Interior-Arsitektur-30.jpeg";
 
 import interiorVideo1 from "../assets/img/Project-Interior-Rumah-Tinggal-Video.mp4";
 import interiorVideo2 from "../assets/img/Project-Interior-Rumah-Tinggal-Video-2.mp4";
@@ -210,6 +228,24 @@ export const PortfolioItems = [
       arsitekturBg10,
       arsitekturBg11,
       arsitekturBg12,
+      arsitekturBg13,
+      arsitekturBg14,
+      arsitekturBg15,
+      arsitekturBg16,
+      arsitekturBg17,
+      arsitekturBg18,
+      arsitekturBg19,
+      arsitekturBg20,
+      arsitekturBg21,
+      arsitekturBg22,
+      arsitekturBg23,
+      arsitekturBg24,
+      arsitekturBg25,
+      arsitekturBg26,
+      arsitekturBg27,
+      arsitekturBg28,
+      arsitekturBg29,
+      arsitekturBg30,
     ],
     link: "project-arsitektur",
     description:
