@@ -63,17 +63,17 @@ import interiorBg62 from "../assets/img/Project-Interior-Tempat-Usaha-14.jpeg";
 import interiorBg63 from "../assets/img/Project-Interior-Tempat-Usaha-15.jpeg";
 
 import arsitekturBg1 from "../assets/img/Project-Interior-Arsitektur.jpeg";
-import arsitekturBg2 from "../assets/img/Project-Interior-Arsitektur-3.jpeg";
-import arsitekturBg3 from "../assets/img/Project-Interior-Arsitektur-4.jpeg";
-import arsitekturBg4 from "../assets/img/Project-Interior-Arsitektur-5.jpeg";
-import arsitekturBg5 from "../assets/img/Project-Interior-Arsitektur-6.jpeg";
-import arsitekturBg6 from "../assets/img/Project-Interior-Arsitektur-7.jpeg";
-import arsitekturBg7 from "../assets/img/Project-Interior-Arsitektur-8.jpeg";
-import arsitekturBg8 from "../assets/img/Project-Interior-Arsitektur-9.jpeg";
-import arsitekturBg9 from "../assets/img/Project-Interior-Arsitektur-10.jpeg";
-import arsitekturBg10 from "../assets/img/Project-Interior-Arsitektur-11.jpeg";
-import arsitekturBg11 from "../assets/img/Project-Interior-Arsitektur-12.jpeg";
-import arsitekturBg12 from "../assets/img/Project-Interior-Arsitektur-13.jpeg";
+import arsitekturBg2 from "../assets/img/Project-Interior-Arsitektur-2.jpeg";
+import arsitekturBg3 from "../assets/img/Project-Interior-Arsitektur-3.jpeg";
+import arsitekturBg4 from "../assets/img/Project-Interior-Arsitektur-4.jpeg";
+import arsitekturBg5 from "../assets/img/Project-Interior-Arsitektur-5.jpeg";
+import arsitekturBg6 from "../assets/img/Project-Interior-Arsitektur-6.jpeg";
+import arsitekturBg7 from "../assets/img/Project-Interior-Arsitektur-7.jpeg";
+import arsitekturBg8 from "../assets/img/Project-Interior-Arsitektur-8.jpeg";
+import arsitekturBg9 from "../assets/img/Project-Interior-Arsitektur-9.jpeg";
+import arsitekturBg10 from "../assets/img/Project-Interior-Arsitektur-10.jpeg";
+import arsitekturBg11 from "../assets/img/Project-Interior-Arsitektur-11.jpeg";
+import arsitekturBg12 from "../assets/img/Project-Interior-Arsitektur-12.jpeg";
 
 import interiorVideo1 from "../assets/img/Project-Interior-Rumah-Tinggal-Video.mp4";
 import interiorVideo2 from "../assets/img/Project-Interior-Rumah-Tinggal-Video-2.mp4";
