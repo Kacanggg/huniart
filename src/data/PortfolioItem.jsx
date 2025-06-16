@@ -56,6 +56,11 @@ import interiorBg55 from "../assets/img/Project-Interior-Tempat-Usaha-7.jpeg";
 import interiorBg56 from "../assets/img/Project-Interior-Tempat-Usaha-8.jpeg";
 import interiorBg57 from "../assets/img/Project-Interior-Tempat-Usaha-9.jpeg";
 import interiorBg58 from "../assets/img/Project-Interior-Tempat-Usaha-10.jpeg";
+import interiorBg59 from "../assets/img/Project-Interior-Tempat-Usaha-11.jpeg";
+import interiorBg60 from "../assets/img/Project-Interior-Tempat-Usaha-12.jpeg";
+import interiorBg61 from "../assets/img/Project-Interior-Tempat-Usaha-13.jpeg";
+import interiorBg62 from "../assets/img/Project-Interior-Tempat-Usaha-14.jpeg";
+import interiorBg63 from "../assets/img/Project-Interior-Tempat-Usaha-15.jpeg";
 
 import arsitekturBg1 from "../assets/img/Project-Interior-Arsitektur.jpeg";
 import arsitekturBg2 from "../assets/img/Project-Interior-Arsitektur-3.jpeg";
@@ -176,6 +181,11 @@ export const PortfolioItems = [
       interiorBg56,
       interiorBg57,
       interiorBg58,
+      interiorBg59,
+      interiorBg60,
+      interiorBg61,
+      interiorBg62,
+      interiorBg63,
     ],
     link: "project-interior-tempat-usaha",
     description:
