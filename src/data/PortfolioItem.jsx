@@ -26,24 +26,36 @@ import interiorBg25 from "../assets/img/Project-Interior-Rumah-Tinggal-16.jpeg";
 import interiorBg26 from "../assets/img/Project-Interior-Rumah-Tinggal-17.jpeg";
 import interiorBg27 from "../assets/img/Project-Interior-Rumah-Tinggal-18.jpeg";
 import interiorBg28 from "../assets/img/Project-Interior-Rumah-Tinggal-19.jpeg";
-import interiorBg29 from "../assets/img/Project-Interior-Kantor.jpeg";
-import interiorBg30 from "../assets/img/Project-Interior-Kantor-2.jpeg";
-import interiorBg31 from "../assets/img/Project-Interior-Kantor-3.jpeg";
-import interiorBg32 from "../assets/img/Project-Interior-Kantor-4.jpeg";
-import interiorBg33 from "../assets/img/Project-Interior-Kantor-5.jpeg";
-import interiorBg34 from "../assets/img/Project-Interior-Kantor-6.jpeg";
-import interiorBg35 from "../assets/img/Project-Interior-Kantor-7.jpeg";
-import interiorBg36 from "../assets/img/Project-Interior-Kantor-8.jpeg";
-import interiorBg37 from "../assets/img/Project-Interior-Tempat-Usaha.jpeg";
-import interiorBg38 from "../assets/img/Project-Interior-Tempat-Usaha-2.jpeg";
-import interiorBg39 from "../assets/img/Project-Interior-Tempat-Usaha-3.jpeg";
-import interiorBg40 from "../assets/img/Project-Interior-Tempat-Usaha-4.jpeg";
-import interiorBg41 from "../assets/img/Project-Interior-Tempat-Usaha-5.jpeg";
-import interiorBg42 from "../assets/img/Project-Interior-Tempat-Usaha-6.jpeg";
-import interiorBg43 from "../assets/img/Project-Interior-Tempat-Usaha-7.jpeg";
-import interiorBg44 from "../assets/img/Project-Interior-Tempat-Usaha-8.jpeg";
-import interiorBg45 from "../assets/img/Project-Interior-Tempat-Usaha-9.jpeg";
-import interiorBg46 from "../assets/img/Project-Interior-Tempat-Usaha-10.jpeg";
+import interiorBg29 from "../assets/img/Project-Interior-Rumah-Tinggal-20.jpeg";
+import interiorBg30 from "../assets/img/Project-Interior-Rumah-Tinggal-21.jpeg";
+import interiorBg31 from "../assets/img/Project-Interior-Rumah-Tinggal-22.jpeg";
+import interiorBg32 from "../assets/img/Project-Interior-Rumah-Tinggal-23.jpeg";
+import interiorBg33 from "../assets/img/Project-Interior-Rumah-Tinggal-24.jpeg";
+import interiorBg34 from "../assets/img/Project-Interior-Rumah-Tinggal-25.jpeg";
+import interiorBg35 from "../assets/img/Project-Interior-Rumah-Tinggal-26.jpeg";
+import interiorBg36 from "../assets/img/Project-Interior-Rumah-Tinggal-27.jpeg";
+import interiorBg37 from "../assets/img/Project-Interior-Kantor.jpeg";
+import interiorBg38 from "../assets/img/Project-Interior-Kantor-2.jpeg";
+import interiorBg39 from "../assets/img/Project-Interior-Kantor-3.jpeg";
+import interiorBg40 from "../assets/img/Project-Interior-Kantor-4.jpeg";
+import interiorBg41 from "../assets/img/Project-Interior-Kantor-5.jpeg";
+import interiorBg42 from "../assets/img/Project-Interior-Kantor-6.jpeg";
+import interiorBg43 from "../assets/img/Project-Interior-Kantor-7.jpeg";
+import interiorBg44 from "../assets/img/Project-Interior-Kantor-8.jpeg";
+import interiorBg45 from "../assets/img/Project-Interior-Kantor-9.jpeg";
+import interiorBg46 from "../assets/img/Project-Interior-Kantor-10.jpeg";
+import interiorBg47 from "../assets/img/Project-Interior-Kantor-11.jpeg";
+import interiorBg48 from "../assets/img/Project-Interior-Kantor-12.jpeg";
+import interiorBg49 from "../assets/img/Project-Interior-Tempat-Usaha.jpeg";
+import interiorBg50 from "../assets/img/Project-Interior-Tempat-Usaha-2.jpeg";
+import interiorBg51 from "../assets/img/Project-Interior-Tempat-Usaha-3.jpeg";
+import interiorBg52 from "../assets/img/Project-Interior-Tempat-Usaha-4.jpeg";
+import interiorBg53 from "../assets/img/Project-Interior-Tempat-Usaha-5.jpeg";
+import interiorBg54 from "../assets/img/Project-Interior-Tempat-Usaha-6.jpeg";
+import interiorBg55 from "../assets/img/Project-Interior-Tempat-Usaha-7.jpeg";
+import interiorBg56 from "../assets/img/Project-Interior-Tempat-Usaha-8.jpeg";
+import interiorBg57 from "../assets/img/Project-Interior-Tempat-Usaha-9.jpeg";
+import interiorBg58 from "../assets/img/Project-Interior-Tempat-Usaha-10.jpeg";
 
 import arsitekturBg1 from "../assets/img/Project-Interior-Arsitektur.jpeg";
 import arsitekturBg2 from "../assets/img/Project-Interior-Arsitektur-3.jpeg";
@@ -109,6 +121,14 @@ export const PortfolioItems = [
       interiorBg26,
       interiorBg27,
       interiorBg28,
+      interiorBg29,
+      interiorBg30,
+      interiorBg31,
+      interiorBg32,
+      interiorBg33,
+      interiorBg34,
+      interiorBg35,
+      interiorBg36,
     ],
     videos: [interiorVideo1, interiorVideo2],
     link: "project-interior-rumah-tinggal",
@@ -120,26 +140,6 @@ export const PortfolioItems = [
     title: "Project Interior - Kantor",
     mainCategory: "Interior",
     category: "Kantor",
-    image: interiorBg29,
-    images: [
-      interiorBg29,
-      interiorBg30,
-      interiorBg31,
-      interiorBg32,
-      interiorBg33,
-      interiorBg34,
-      interiorBg35,
-      interiorBg36,
-    ],
-    link: "project-interior-kantor",
-    description:
-      "Saat estetika bertemu kenyamanan, hadirlah ruang kantor yang tidak hanya enak dipandang, tapi juga bikin betah bekerja. Desain modern yang tertata rapi memicu ide-ide kreatif mengalir deras, vibes positif tersebar di setiap sudut, dan kenyamanan jadi kunci produktivitas.",
-  },
-  {
-    id: 4,
-    title: "Project Interior - Tempat Usaha",
-    mainCategory: "Interior",
-    category: "Tempat Usaha",
     image: interiorBg37,
     images: [
       interiorBg37,
@@ -152,6 +152,30 @@ export const PortfolioItems = [
       interiorBg44,
       interiorBg45,
       interiorBg46,
+      interiorBg47,
+      interiorBg48,
+    ],
+    link: "project-interior-kantor",
+    description:
+      "Saat estetika bertemu kenyamanan, hadirlah ruang kantor yang tidak hanya enak dipandang, tapi juga bikin betah bekerja. Desain modern yang tertata rapi memicu ide-ide kreatif mengalir deras, vibes positif tersebar di setiap sudut, dan kenyamanan jadi kunci produktivitas.",
+  },
+  {
+    id: 4,
+    title: "Project Interior - Tempat Usaha",
+    mainCategory: "Interior",
+    category: "Tempat Usaha",
+    image: interiorBg49,
+    images: [
+      interiorBg49,
+      interiorBg50,
+      interiorBg51,
+      interiorBg52,
+      interiorBg53,
+      interiorBg54,
+      interiorBg55,
+      interiorBg56,
+      interiorBg57,
+      interiorBg58,
     ],
     link: "project-interior-tempat-usaha",
     description:
